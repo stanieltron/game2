@@ -1,0 +1,565 @@
+{
+  "name": "power-first",
+  "error": null,
+  "sourceHash": "86a200b3f0527cc56a87d30f898c32e940ce1e19bb9b6d35c4ff6b78517865ad",
+  "catalogHash": "46d0f9d9d886651b1bebc202239183ca373b903d4b1ddc18bcc995599a062837",
+  "success": true,
+  "raidReady": false,
+  "seconds": 395,
+  "brownoutSeconds": 0,
+  "generatedPUSeconds": 89200,
+  "requestedPUSeconds": 27499.5,
+  "tech": 1,
+  "drones": 4,
+  "cargo": {
+    "plate": 36,
+    "wire": 32,
+    "refractory": 8,
+    "carbon": 17,
+    "iron": 13,
+    "copperOre": 17,
+    "steel": 1,
+    "copper": 1
+  },
+  "produced": {
+    "carbon": 37,
+    "iron": 34,
+    "copperOre": 34,
+    "steel": 21,
+    "plate": 20,
+    "copper": 12,
+    "wire": 22
+  },
+  "machines": [
+    {
+      "id": "core",
+      "machine": {
+        "projectPhase": 0,
+        "assemblyPhase": 0,
+        "phasePaid": false,
+        "assemblyStarted": false,
+        "phaseProgress": 0,
+        "uid": 1,
+        "x": 0,
+        "y": 0,
+        "direction": 0,
+        "tier": 1,
+        "splitInput": 0,
+        "splitA": 2,
+        "splitB": 3,
+        "splitNext": 0,
+        "packets": [],
+        "def": "core",
+        "resource": null,
+        "recipe": null,
+        "filter": "",
+        "enabled": true,
+        "paid": true,
+        "working": false,
+        "built": 0,
+        "progress": 0,
+        "changeover": 0,
+        "fuelSeconds": 0,
+        "transport": 1.2,
+        "input": {
+          "Total": 0,
+          "stacks": []
+        },
+        "output": {
+          "Total": 0,
+          "stacks": []
+        },
+        "investment": {
+          "Total": 0,
+          "stacks": []
+        },
+        "status": ""
+      }
+    },
+    {
+      "id": "carbon",
+      "machine": {
+        "projectPhase": 0,
+        "assemblyPhase": 0,
+        "phasePaid": false,
+        "assemblyStarted": false,
+        "phaseProgress": 0,
+        "uid": 2,
+        "x": -15,
+        "y": 19,
+        "direction": 0,
+        "tier": 1,
+        "splitInput": 0,
+        "splitA": 2,
+        "splitB": 3,
+        "splitNext": 0,
+        "packets": [],
+        "def": "miner",
+        "resource": "carbon",
+        "recipe": "",
+        "filter": "",
+        "enabled": true,
+        "paid": true,
+        "working": false,
+        "built": 20,
+        "progress": 5.25,
+        "changeover": 0,
+        "fuelSeconds": 0,
+        "transport": 1.2,
+        "input": {
+          "Total": 0,
+          "stacks": []
+        },
+        "output": {
+          "Total": 0,
+          "stacks": [
+            {
+              "item": "carbon",
+              "amount": 0
+            }
+          ]
+        },
+        "investment": {
+          "Total": 16,
+          "stacks": [
+            {
+              "item": "plate",
+              "amount": 12
+            },
+            {
+              "item": "wire",
+              "amount": 4
+            }
+          ]
+        },
+        "status": "Mining"
+      }
+    },
+    {
+      "id": "power",
+      "machine": {
+        "projectPhase": 0,
+        "assemblyPhase": 0,
+        "phasePaid": false,
+        "assemblyStarted": false,
+        "phaseProgress": 0,
+        "uid": 3,
+        "x": 52,
+        "y": 0,
+        "direction": 0,
+        "tier": 1,
+        "splitInput": 0,
+        "splitA": 2,
+        "splitB": 3,
+        "splitNext": 0,
+        "packets": [],
+        "def": "generator",
+        "resource": "",
+        "recipe": "",
+        "filter": "",
+        "enabled": true,
+        "paid": true,
+        "working": false,
+        "built": 35,
+        "progress": 0,
+        "changeover": 0,
+        "fuelSeconds": 0,
+        "transport": 1.2,
+        "input": {
+          "Total": 2,
+          "stacks": [
+            {
+              "item": "carbon",
+              "amount": 2
+            }
+          ]
+        },
+        "output": {
+          "Total": 0,
+          "stacks": []
+        },
+        "investment": {
+          "Total": 30,
+          "stacks": [
+            {
+              "item": "plate",
+              "amount": 18
+            },
+            {
+              "item": "wire",
+              "amount": 8
+            },
+            {
+              "item": "refractory",
+              "amount": 4
+            }
+          ]
+        },
+        "status": "Generating"
+      }
+    },
+    {
+      "id": "iron",
+      "machine": {
+        "projectPhase": 0,
+        "assemblyPhase": 0,
+        "phasePaid": false,
+        "assemblyStarted": false,
+        "phaseProgress": 0,
+        "uid": 4,
+        "x": -18,
+        "y": -4,
+        "direction": 0,
+        "tier": 1,
+        "splitInput": 0,
+        "splitA": 2,
+        "splitB": 3,
+        "splitNext": 0,
+        "packets": [],
+        "def": "miner",
+        "resource": "iron",
+        "recipe": "",
+        "filter": "",
+        "enabled": true,
+        "paid": true,
+        "working": false,
+        "built": 20,
+        "progress": 0.25,
+        "changeover": 0,
+        "fuelSeconds": 0,
+        "transport": 1.2,
+        "input": {
+          "Total": 0,
+          "stacks": []
+        },
+        "output": {
+          "Total": 0,
+          "stacks": [
+            {
+              "item": "iron",
+              "amount": 0
+            }
+          ]
+        },
+        "investment": {
+          "Total": 16,
+          "stacks": [
+            {
+              "item": "plate",
+              "amount": 12
+            },
+            {
+              "item": "wire",
+              "amount": 4
+            }
+          ]
+        },
+        "status": "Mining"
+      }
+    },
+    {
+      "id": "copper",
+      "machine": {
+        "projectPhase": 0,
+        "assemblyPhase": 0,
+        "phasePaid": false,
+        "assemblyStarted": false,
+        "phaseProgress": 0,
+        "uid": 5,
+        "x": 21,
+        "y": -12,
+        "direction": 0,
+        "tier": 1,
+        "splitInput": 0,
+        "splitA": 2,
+        "splitB": 3,
+        "splitNext": 0,
+        "packets": [],
+        "def": "miner",
+        "resource": "copperOre",
+        "recipe": "",
+        "filter": "",
+        "enabled": true,
+        "paid": true,
+        "working": false,
+        "built": 20,
+        "progress": 0.25,
+        "changeover": 0,
+        "fuelSeconds": 0,
+        "transport": 1.2,
+        "input": {
+          "Total": 0,
+          "stacks": []
+        },
+        "output": {
+          "Total": 0,
+          "stacks": [
+            {
+              "item": "copperOre",
+              "amount": 0
+            }
+          ]
+        },
+        "investment": {
+          "Total": 16,
+          "stacks": [
+            {
+              "item": "plate",
+              "amount": 12
+            },
+            {
+              "item": "wire",
+              "amount": 4
+            }
+          ]
+        },
+        "status": "Mining"
+      }
+    },
+    {
+      "id": "smelt",
+      "machine": {
+        "projectPhase": 0,
+        "assemblyPhase": 0,
+        "phasePaid": false,
+        "assemblyStarted": false,
+        "phaseProgress": 0,
+        "uid": 6,
+        "x": 40,
+        "y": 0,
+        "direction": 0,
+        "tier": 1,
+        "splitInput": 0,
+        "splitA": 2,
+        "splitB": 3,
+        "splitNext": 0,
+        "packets": [],
+        "def": "smelter",
+        "resource": "",
+        "recipe": "smelter_copper",
+        "filter": "",
+        "enabled": true,
+        "paid": true,
+        "working": false,
+        "built": 30,
+        "progress": 0,
+        "changeover": 0,
+        "fuelSeconds": 0,
+        "transport": 1.2,
+        "input": {
+          "Total": 5,
+          "stacks": [
+            {
+              "item": "iron",
+              "amount": 0
+            },
+            {
+              "item": "copperOre",
+              "amount": 5
+            }
+          ]
+        },
+        "output": {
+          "Total": 0,
+          "stacks": [
+            {
+              "item": "steel",
+              "amount": 0
+            },
+            {
+              "item": "copper",
+              "amount": 0
+            }
+          ]
+        },
+        "investment": {
+          "Total": 26,
+          "stacks": [
+            {
+              "item": "plate",
+              "amount": 16
+            },
+            {
+              "item": "refractory",
+              "amount": 6
+            },
+            {
+              "item": "wire",
+              "amount": 4
+            }
+          ]
+        },
+        "status": "Producing"
+      }
+    },
+    {
+      "id": "work",
+      "machine": {
+        "projectPhase": 0,
+        "assemblyPhase": 0,
+        "phasePaid": false,
+        "assemblyStarted": false,
+        "phaseProgress": 0,
+        "uid": 7,
+        "x": 46,
+        "y": 0,
+        "direction": 0,
+        "tier": 1,
+        "splitInput": 0,
+        "splitA": 2,
+        "splitB": 3,
+        "splitNext": 0,
+        "packets": [],
+        "def": "workshop",
+        "resource": "",
+        "recipe": "work_wire",
+        "filter": "",
+        "enabled": true,
+        "paid": true,
+        "working": false,
+        "built": 40,
+        "progress": 0,
+        "changeover": 0,
+        "fuelSeconds": 0,
+        "transport": 1.2,
+        "input": {
+          "Total": 0,
+          "stacks": [
+            {
+              "item": "steel",
+              "amount": 0
+            },
+            {
+              "item": "copper",
+              "amount": 0
+            }
+          ]
+        },
+        "output": {
+          "Total": 0,
+          "stacks": [
+            {
+              "item": "plate",
+              "amount": 0
+            },
+            {
+              "item": "wire",
+              "amount": 0
+            }
+          ]
+        },
+        "investment": {
+          "Total": 22,
+          "stacks": [
+            {
+              "item": "plate",
+              "amount": 14
+            },
+            {
+              "item": "wire",
+              "amount": 6
+            },
+            {
+              "item": "refractory",
+              "amount": 2
+            }
+          ]
+        },
+        "status": "Producing"
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "index": 0,
+      "action": "build",
+      "id": "carbon",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "index": 1,
+      "action": "build",
+      "id": "power",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "index": 2,
+      "action": "wait",
+      "id": "power",
+      "start": 0,
+      "end": 35
+    },
+    {
+      "index": 3,
+      "action": "build",
+      "id": "iron",
+      "start": 35,
+      "end": 35
+    },
+    {
+      "index": 4,
+      "action": "build",
+      "id": "copper",
+      "start": 35,
+      "end": 35
+    },
+    {
+      "index": 5,
+      "action": "build",
+      "id": "smelt",
+      "start": 35,
+      "end": 35
+    },
+    {
+      "index": 6,
+      "action": "build",
+      "id": "work",
+      "start": 35,
+      "end": 35
+    },
+    {
+      "index": 7,
+      "action": "wait",
+      "id": null,
+      "start": 35,
+      "end": 275
+    },
+    {
+      "index": 8,
+      "action": "recipe",
+      "id": "smelt",
+      "start": 275,
+      "end": 275
+    },
+    {
+      "index": 9,
+      "action": "recipe",
+      "id": "work",
+      "start": 275,
+      "end": 275
+    },
+    {
+      "index": 10,
+      "action": "wait",
+      "id": null,
+      "start": 275,
+      "end": 335
+    },
+    {
+      "index": 11,
+      "action": "research",
+      "id": null,
+      "start": 335,
+      "end": 335
+    },
+    {
+      "index": 12,
+      "action": "wait",
+      "id": null,
+      "start": 335,
+      "end": 395
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+"""Publish the explicit-count 15-minute experiment and validate deterministic replays."""
+import json,html,hashlib,shutil,subprocess
+import calibrate_fifteen as c
+s=c.s;OUT=c.OUT
+
+def main():
+    selected=json.loads((OUT/'selected.json').read_text());cases=[]
+    for n in ['1','4','5','12']:
+        cases.append([str(OUT/'candidate.catalog.json'),selected['best'][n]['allocation'],selected['id'],'freeLogistics','replaceAll'])
+    replay=c.run(cases,'replay')
+    for row in replay:
+        assert row==selected['best'][str(row['path'])],f'Replay mismatch path {row["path"]}'
+        result=row['result'];assert result['success'] and result['counts']['industrialSmelter']==row['path']+1
+        assert not any(result['counts'].get(k,0) for k in ['smelter','workshop','miner:iron','miner:copperOre'])
+    print('PASS: exact replays and complete industrial endpoints for paths 1, 4, 5, 12')
+    trials=sum(len(json.loads((OUT/(name+'-results.json')).read_text())) for name in ['coarse','refine','challenge'])
+    prices=json.loads((OUT/'candidate.catalog.json').read_text());pr=''
+    for b in prices['buildings']:
+        if b['id'] in ['miner','smelter','workshop','generator','industrialMiner','industrialSmelter','structural','electrical']:
+            cost=', '.join(f'{x["amount"]} {x["item"]}' for x in b['cost'])
+            pr+=f'<tr><td>{b["id"]}</td><td>{cost}</td><td>{b["seconds"]:.2f}s</td><td>{b["power"]}</td></tr>'
+    rows=''
+    for n,r in sorted(selected['best'].items(),key=lambda x:int(x[0])):
+        z=r['result'];rows+=f'<tr><td>{n}</td><td>{z["iron"]} iron + {z["copper"]} copper</td><td>{3*(int(n)+1)}</td><td>{z["seconds"]/60:.2f}</td><td>{z["researchSeconds"]/60:.2f}</td></tr>'
+    research=', '.join(f'{x["amount"]} {x["item"]}' for x in prices['techs'][0]['cost'])
+    body='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>15-minute industrial milestone</title><style>:root{color-scheme:dark}body{background:#10191d;color:#e5eeeb;font:16px system-ui;max-width:1050px;margin:30px auto;padding:20px}p{line-height:1.6;color:#bed1ca}h1{font-size:36px}a{color:#9ddacc}section{background:#1a292e;border:1px solid #38534e;border-radius:12px;padding:20px;margin:20px 0}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{text-align:left;border-bottom:1px solid #38534e;padding:10px}.scroll{max-height:500px;overflow:auto}.metrics{display:flex;gap:20px;flex-wrap:wrap}.metrics div{flex:1;padding:20px;background:#24383c;border-radius:10px}.metrics b{display:block;font-size:30px;color:#9ddacc}select{font:inherit;color:inherit;background:#24383c;padding:8px}svg{width:100%;height:auto}pre{white-space:pre-wrap}</style>
+<p><a href="starter-refinement.html">← Previous one-hour experiment</a> · EXPERIMENTAL CATALOG</p><h1>15-minute industrial milestone</h1><p>Target: previous path 4 near 15 minutes; no expansion near 30 minutes; wider paths slower. Fixed building prices, binary power, 25% refund. No factory-size surcharge.</p>
+<div class="metrics"><div>No expansion<b>MINIMUM min</b></div><div>Path 4<b>FOUR min</b></div><div>Path 12<b>TWELVE min</b></div></div>
+<p><b>Counting assumption:</b> “4” provisionally means the previous path 4: five total sets, not four machines or four times both starting lines. Each set contains a miner, smelter and workshop. See exact iron/copper counts below.</p>
+<section><h2>Measured curve</h2><svg id="chart" viewBox="0 0 960 240" role="img" aria-label="Completion minutes for each expansion path"></svg><div class="scroll"><table><thead><tr><th>Legacy path</th><th>Metal sets</th><th>Metal machines</th><th>Finish min</th><th>Research min</th></tr></thead><tbody>ROWS</tbody></table></div><p>TRIALS simulations across 36 economies and both endpoint definitions. Finalists exhaust every iron/copper expansion allocation through path 10, with the first addition fixed to iron. Larger paths are sampled. Upgrade order and production scheduling remain fixed policies; this is not a global optimum over all actions.</p></section>
+<section><h2>What the clock measures</h2><p>Start with one built iron set and one built copper set, empty inventory and 15 belt tiles. Buy extra basic sets, coal miners and generators; fund industrial research; then replace every metal set with industrial miners, industrial smelters, and structural/electrical machines. Basic coal power remains. Resource production, construction and research time count; player placement effort does not.</p><p><b>Different endpoints:</b> wider paths finish larger industrial factories. Their extra time includes replacing all those machines. It does not establish the penalty for overbuilding toward an identical Fighter or two-set industrial goal.</p><p>Silica/refractory costs are excluded. Transfers are ideal manual logistics, without a belt throughput limit or placement effort; existing belt power is charged. Basic machines keep producing alongside industrial machines during replacement. This has not validated a physical belt network.</p></section>
+<section><h2>Prices and pacing</h2><p>Industrial research: RESEARCH. Research duration remains 45 seconds. Basic mining is 40 items/minute; industrial mining is 200/minute. Early recipes run at 5× original catalog speed. The construction multiplier below applies to building construction, not player placement effort. The live game catalog is unchanged.</p><div class="scroll"><table><thead><tr><th>Building</th><th>Cost</th><th>Construction</th><th>Power demand</th></tr></thead><tbody>PRICES</tbody></table></div><p>Original-catalog multipliers and refund fraction:</p><pre>PARAMETERS</pre><p>Catalogue: <code>Tools/Balance/reports/starter-fifteen/candidate.catalog.json</code></p></section>
+<section><h2>Build milestones</h2><label>Legacy path <select id="path"></select></label><p>Intervals include resource production, funding waits and construction; they are not isolated idle waits.</p><div class="scroll"><table><thead><tr><th>Action</th><th>Elapsed min</th><th>Interval min</th></tr></thead><tbody id="ledger"></tbody></table></div></section>
+<script>const data=DATA;const paths=Object.keys(data.best).map(Number).sort((a,b)=>a-b);const select=document.querySelector('#path');paths.forEach(n=>{const o=document.createElement('option');o.value=n;o.textContent=n;select.appendChild(o)});select.value=4;function draw(){let last=0;document.querySelector('#ledger').replaceChildren(...data.best[select.value].result.marks.map(m=>{const tr=document.createElement('tr');[m.action,(m.seconds/60).toFixed(2),((m.seconds-last)/60).toFixed(2)].forEach(v=>{const td=document.createElement('td');td.textContent=v;tr.appendChild(td)});last=m.seconds;return tr}))}select.onchange=draw;draw();const chart=document.querySelector('#chart'),max=Math.max(...Object.values(data.times));function node(tag,attrs,text){const e=document.createElementNS('http://www.w3.org/2000/svg',tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));if(text!==undefined)e.textContent=text;chart.appendChild(e)}paths.forEach((n,i)=>{const x=40+i*880/paths.length,h=data.times[n]/max*170;node('rect',{x,y:200-h,width:42,height:h,fill:n===4?'#9ddacc':'#657d80'});node('text',{x:x+21,y:223,fill:'#e5eeeb','text-anchor':'middle'},n);node('text',{x:x+21,y:190-h,fill:'#e5eeeb','text-anchor':'middle','font-size':12},data.times[n].toFixed(1))});</script></html>'''
+    for key,value in {'MINIMUM':f'{selected["times"]["1"]:.1f}','FOUR':f'{selected["times"]["4"]:.1f}','TWELVE':f'{selected["times"]["12"]:.1f}','ROWS':rows,'TRIALS':str(trials),'RESEARCH':research,'PRICES':pr,'PARAMETERS':html.escape(json.dumps(selected['parameters'],indent=2)),'DATA':json.dumps(selected).replace('</','<\\/')}.items():body=body.replace(key,value)
+    (OUT/'report.html').write_text(body,encoding='utf-8');(s.HERE/'web/starter-fifteen.html').write_text(body,encoding='utf-8')
+    files=list(s.HERE.glob('*.cs'))+list(s.HERE.glob('*.ps1'))+[s.HERE/x for x in ['calibrate_starter.py','calibrate_fifteen.py','refine_fifteen.py','report_fifteen.py']]+list((s.ROOT/'Assets/Scripts').glob('Factory*.cs'));hashes={}
+    for f in files:
+        rel=f.relative_to(s.ROOT);dest=OUT/'source'/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(f,dest);hashes[str(rel)]=hashlib.sha256(f.read_bytes()).hexdigest()
+    s.write(OUT/'source-sha256.json',hashes);print('Published starter-fifteen.html and archived sources')
+
+if __name__=='__main__':main()

@@ -1,0 +1,73 @@
+{
+  "minimum": "minimum.policy.json",
+  "reference": "reference.policy.json",
+  "search": {
+    "candidates": [
+      {
+        "capital": 1,
+        "cycles": 1
+      },
+      {
+        "capital": 1.5,
+        "cycles": 0.85
+      },
+      {
+        "capital": 2,
+        "cycles": 0.75
+      },
+      {
+        "capital": 3,
+        "cycles": 0.6
+      },
+      {
+        "capital": 4,
+        "cycles": 0.5
+      },
+      {
+        "capital": 2,
+        "cycles": 1
+      },
+      {
+        "capital": 4,
+        "cycles": 1
+      },
+      {
+        "capital": 8,
+        "cycles": 1
+      },
+      {
+        "capital": 4,
+        "cycles": 1.25
+      },
+      {
+        "capital": 8,
+        "cycles": 1.25
+      }
+    ],
+    "confirmStep": 0.0625,
+    "finalists": 2,
+    "screenStep": 0.25,
+    "validationStep": 0.125
+  },
+  "targets": {
+    "fastMinutes": [
+      90,
+      120
+    ],
+    "maxCounterexampleAdvantageSeconds": 30,
+    "maxStepDifferenceSeconds": 120,
+    "minimumRatio": [
+      2.8,
+      3.2
+    ],
+    "penalties": {
+      "over_12": 0.5,
+      "over_2": 0.1,
+      "over_4": 0.2,
+      "over_6": 0.3,
+      "under_2": 0.15,
+      "under_4": 0.3
+    }
+  },
+  "version": 1
+}

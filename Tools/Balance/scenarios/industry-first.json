@@ -1,0 +1,90 @@
+{
+  "name": "industry-first",
+  "step": 0.25,
+  "timeout": 7200,
+  "autoCollect": true,
+  "autoFuel": true,
+  "actions": [
+    {
+      "op": "build",
+      "id": "iron",
+      "building": "miner",
+      "x": -18,
+      "y": -4,
+      "autoFeed": false
+    },
+    {
+      "op": "build",
+      "id": "copper",
+      "building": "miner",
+      "x": 21,
+      "y": -12,
+      "autoFeed": false
+    },
+    {
+      "op": "build",
+      "id": "smelt",
+      "building": "smelter",
+      "x": 40,
+      "y": 0,
+      "autoFeed": true
+    },
+    {
+      "op": "build",
+      "id": "work",
+      "building": "workshop",
+      "x": 46,
+      "y": 0,
+      "autoFeed": true
+    },
+    {
+      "op": "wait",
+      "condition": "produced",
+      "item": "plate",
+      "amount": 20,
+      "timeout": 3600
+    },
+    {
+      "op": "build",
+      "id": "carbon",
+      "building": "miner",
+      "x": -15,
+      "y": 19,
+      "autoFeed": false
+    },
+    {
+      "op": "build",
+      "id": "power",
+      "building": "generator",
+      "x": 52,
+      "y": 0,
+      "autoFeed": false
+    },
+    {
+      "op": "recipe",
+      "id": "smelt",
+      "recipe": "smelter_copper"
+    },
+    {
+      "op": "recipe",
+      "id": "work",
+      "recipe": "work_wire"
+    },
+    {
+      "op": "wait",
+      "condition": "produced",
+      "item": "wire",
+      "amount": 10,
+      "timeout": 3600
+    },
+    {
+      "op": "research"
+    },
+    {
+      "op": "wait",
+      "condition": "tech",
+      "amount": 1,
+      "timeout": 3600
+    }
+  ]
+}

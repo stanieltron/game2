@@ -1,0 +1,418 @@
+{
+  "name": "investment-v2",
+  "target": {
+    "strongMinutes": [
+      90,
+      120
+    ],
+    "normalMinutes": [
+      120,
+      180
+    ]
+  },
+  "buildings": {
+    "structural": {
+      "cost": [
+        {
+          "item": "plate",
+          "amount": 15
+        },
+        {
+          "item": "beam",
+          "amount": 6
+        },
+        {
+          "item": "wire",
+          "amount": 9
+        }
+      ],
+      "seconds": 40,
+      "tech": 1
+    },
+    "mechanical": {
+      "cost": [
+        {
+          "item": "plate",
+          "amount": 18
+        },
+        {
+          "item": "rod",
+          "amount": 6
+        },
+        {
+          "item": "wire",
+          "amount": 9
+        }
+      ],
+      "seconds": 40,
+      "tech": 1
+    },
+    "electrical": {
+      "cost": [
+        {
+          "item": "plate",
+          "amount": 15
+        },
+        {
+          "item": "wire",
+          "amount": 15
+        },
+        {
+          "item": "refractory",
+          "amount": 3
+        }
+      ],
+      "seconds": 40,
+      "tech": 1
+    },
+    "fluid": {
+      "cost": [
+        {
+          "item": "plate",
+          "amount": 15
+        },
+        {
+          "item": "frame",
+          "amount": 3
+        },
+        {
+          "item": "pump",
+          "amount": 2
+        },
+        {
+          "item": "wire",
+          "amount": 6
+        }
+      ],
+      "seconds": 60
+    },
+    "industrialMiner": {
+      "cost": [
+        {
+          "item": "plate",
+          "amount": 18
+        },
+        {
+          "item": "beam",
+          "amount": 4
+        },
+        {
+          "item": "wire",
+          "amount": 8
+        }
+      ],
+      "seconds": 45,
+      "power": 35,
+      "tech": 1,
+      "rate": 30
+    },
+    "industrialSmelter": {
+      "cost": [
+        {
+          "item": "plate",
+          "amount": 24
+        },
+        {
+          "item": "beam",
+          "amount": 6
+        },
+        {
+          "item": "refractory",
+          "amount": 6
+        },
+        {
+          "item": "wire",
+          "amount": 8
+        }
+      ],
+      "seconds": 60,
+      "power": 60,
+      "tech": 1
+    },
+    "industrialGenerator": {
+      "cost": [
+        {
+          "item": "plate",
+          "amount": 24
+        },
+        {
+          "item": "beam",
+          "amount": 6
+        },
+        {
+          "item": "wire",
+          "amount": 12
+        },
+        {
+          "item": "refractory",
+          "amount": 6
+        }
+      ],
+      "seconds": 60,
+      "tech": 1,
+      "generation": 600
+    },
+    "miner": {
+      "power": 14
+    },
+    "smelter": {
+      "power": 24
+    },
+    "workshop": {
+      "power": 28
+    }
+  },
+  "recipes": {
+    "spec_plate": {
+      "seconds": 1.25,
+      "tech": 1
+    },
+    "spec_beam": {
+      "seconds": 1.875,
+      "tech": 1
+    },
+    "spec_bus": {
+      "seconds": 1.875,
+      "tech": 1
+    },
+    "spec_frame": {
+      "seconds": 3.75,
+      "tech": 1,
+      "inputs": [
+        {
+          "item": "beam",
+          "amount": 3
+        },
+        {
+          "item": "plate",
+          "amount": 3
+        }
+      ]
+    },
+    "spec_bearing": {
+      "seconds": 3.0,
+      "tech": 1
+    },
+    "spec_electrical": {
+      "seconds": 7.5,
+      "tech": 1
+    },
+    "spec_motorCore": {
+      "seconds": 4.5,
+      "tech": 1
+    },
+    "spec_motor": {
+      "seconds": 6.0
+    },
+    "spec_actuator": {
+      "seconds": 6.5
+    },
+    "spec_pump": {
+      "seconds": 7.5
+    },
+    "spec_power": {
+      "seconds": 7.5
+    },
+    "spec_control": {
+      "seconds": 7.5
+    },
+    "industrialSmelter_steel": {
+      "seconds": 2
+    },
+    "industrialSmelter_copper": {
+      "seconds": 2
+    },
+    "spec_rod": {
+      "seconds": 2.5,
+      "tech": 1
+    },
+    "spec_wire": {
+      "seconds": 1.25,
+      "tech": 1
+    },
+    "spec_refractory": {
+      "seconds": 1.875,
+      "tech": 1
+    },
+    "armor": {
+      "tech": 3
+    },
+    "airframe": {
+      "tech": 3
+    },
+    "thruster": {
+      "tech": 3
+    },
+    "fuelSystem": {
+      "tech": 3
+    },
+    "avionics": {
+      "tech": 3
+    },
+    "mount": {
+      "tech": 3
+    },
+    "bayFuel": {
+      "tech": 3
+    },
+    "ammoHandling": {
+      "tech": 3
+    },
+    "work_frame": {
+      "inputs": [
+        {
+          "item": "beam",
+          "amount": 3
+        },
+        {
+          "item": "plate",
+          "amount": 3
+        }
+      ]
+    },
+    "cabinet": {
+      "inputs": [
+        {
+          "item": "power",
+          "amount": 3
+        },
+        {
+          "item": "control",
+          "amount": 3
+        },
+        {
+          "item": "frame",
+          "amount": 2
+        },
+        {
+          "item": "bus",
+          "amount": 3
+        }
+      ]
+    },
+    "drive": {
+      "inputs": [
+        {
+          "item": "motor",
+          "amount": 3
+        },
+        {
+          "item": "bearing",
+          "amount": 3
+        },
+        {
+          "item": "frame",
+          "amount": 2
+        }
+      ]
+    }
+  },
+  "techs": {
+    "1": {
+      "cost": [
+        {
+          "item": "plate",
+          "amount": 120
+        },
+        {
+          "item": "wire",
+          "amount": 40
+        },
+        {
+          "item": "refractory",
+          "amount": 8
+        }
+      ]
+    },
+    "2": {
+      "cost": [
+        {
+          "item": "frame",
+          "amount": 8
+        },
+        {
+          "item": "motorCore",
+          "amount": 8
+        },
+        {
+          "item": "electrical",
+          "amount": 8
+        },
+        {
+          "item": "wire",
+          "amount": 30
+        }
+      ]
+    },
+    "3": {
+      "cost": [
+        {
+          "item": "frame",
+          "amount": 16
+        },
+        {
+          "item": "motor",
+          "amount": 8
+        },
+        {
+          "item": "pump",
+          "amount": 4
+        },
+        {
+          "item": "power",
+          "amount": 4
+        },
+        {
+          "item": "control",
+          "amount": 4
+        }
+      ]
+    },
+    "4": {
+      "cost": [
+        {
+          "item": "frame",
+          "amount": 32
+        },
+        {
+          "item": "motor",
+          "amount": 16
+        },
+        {
+          "item": "pump",
+          "amount": 12
+        },
+        {
+          "item": "power",
+          "amount": 12
+        },
+        {
+          "item": "control",
+          "amount": 12
+        },
+        {
+          "item": "drive",
+          "amount": 8
+        }
+      ],
+      "seconds": 180
+    }
+  },
+  "description": "Whole-chain reinvestment balance: staged capacity growth, power efficiency, persistent upstream material demand.",
+  "projectPhaseSeconds": {
+    "bay": [
+      120,
+      168,
+      168,
+      144,
+      96
+    ],
+    "fighter": [
+      120,
+      120,
+      96,
+      120,
+      96
+    ]
+  }
+}

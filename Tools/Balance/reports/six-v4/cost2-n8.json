@@ -1,0 +1,6559 @@
+{
+  "powerOffSeconds": 2.5,
+  "powerWaitMachineSeconds": 192,
+  "energyPUHours": 1506.6340378220193,
+  "capitalWaitSeconds": 3489,
+  "transportWaitMachineSeconds": 126,
+  "capitalSpent": {
+    "plate": 1044,
+    "wire": 498,
+    "refractory": 124,
+    "beam": 140,
+    "rod": 48,
+    "frame": 8,
+    "pump": 4
+  },
+  "statusSeconds": {
+    "core / ": 27.5,
+    "belt / Building": 30,
+    "belt / Empty": 385123,
+    "miner / Building": 117,
+    "smelter / Building": 88.5,
+    "workshop / Waiting for drone": 18,
+    "generator / Waiting for drone": 18,
+    "miner / Waiting for drone": 18,
+    "smelter / Waiting for drone": 28,
+    "miner / Mining": 10748.5,
+    "core / Power off": 8224,
+    "belt / Power off": 37.5,
+    "miner / Power off": 6.5,
+    "workshop / Building": 118.5,
+    "miner / Paused": 192,
+    "generator / Building": 69,
+    "smelter / Power off": 1.5,
+    "smelter / Paused": 1497.5,
+    "generator / Needs Carbon": 1,
+    "generator / Generating": 3729,
+    "workshop / Needs inputs": 1.5,
+    "workshop / Paused": 2365.5,
+    "smelter / Needs inputs": 1,
+    "smelter / Producing": 3980,
+    "workshop / Producing": 3080,
+    "workshop / Power off": 1,
+    "generator / Power off": 0.5,
+    "structural / Building": 316,
+    "structural / Needs inputs": 4,
+    "structural / Producing": 12213,
+    "structural / Paused": 21746,
+    "electrical / Building": 316,
+    "electrical / Needs inputs": 4,
+    "electrical / Paused": 28611,
+    "structural / Reconfiguring": 5180,
+    "electrical / Reconfiguring": 2260,
+    "electrical / Producing": 6905,
+    "industrialMiner / Building": 356,
+    "industrialMiner / Mining": 45934.5,
+    "industrialGenerator / Building": 238,
+    "industrialGenerator / Needs Carbon": 2,
+    "industrialGenerator / Generating": 22789,
+    "industrialSmelter / Building": 357,
+    "industrialSmelter / Needs inputs": 3,
+    "industrialSmelter / Paused": 22169,
+    "industrialSmelter / Producing": 9816,
+    "mechanical / Building": 316,
+    "mechanical / Needs inputs": 4,
+    "generator / Paused": 12205,
+    "mechanical / Paused": 24697.5,
+    "mechanical / Producing": 8738,
+    "mechanical / Reconfiguring": 2640,
+    "fluid / Building": 119,
+    "fluid / Needs inputs": 1,
+    "fluid / Paused": 6240.5,
+    "fighterPad / Phase needs delivery": 1153.5,
+    "fighterPad / Foundation \u0026 frame": 120,
+    "fluid / Producing": 1200,
+    "fighterPad / Heavy mechanisms": 168,
+    "fluid / Reconfiguring": 40,
+    "fighterPad / Power \u0026 thermal": 168,
+    "fighterPad / Service systems": 144,
+    "fighterPad / Commissioning": 96,
+    "fighterPad / Skeleton setup": 120,
+    "fighterPad / Propulsion \u0026 fuel": 120,
+    "fighterPad / Electrical \u0026 control": 96,
+    "fighterPad / Weapons \u0026 armor": 120,
+    "fighterPad / Calibration \u0026 pressure test": 96
+  },
+  "samples": [
+    {
+      "seconds": 0.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 0,
+      "generation": 80,
+      "queue": "belt",
+      "shortfall": {
+        "plate": 0
+      },
+      "cargo": {
+        "plate": 120,
+        "wire": 50,
+        "refractory": 24
+      }
+    },
+    {
+      "seconds": 60.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 74,
+      "generation": 80,
+      "queue": "workshop",
+      "shortfall": {
+        "plate": 6,
+        "wire": 0,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 8,
+        "wire": 12,
+        "refractory": 6,
+        "carbon": 3
+      }
+    },
+    {
+      "seconds": 120.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 168,
+      "generation": 240,
+      "queue": "workshop",
+      "shortfall": {
+        "plate": 3,
+        "wire": 0,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 11,
+        "wire": 12,
+        "refractory": 6,
+        "carbon": 3,
+        "iron": 0,
+        "copperOre": 5,
+        "silicate": 5,
+        "steel": 0
+      }
+    },
+    {
+      "seconds": 180.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 168,
+      "generation": 240,
+      "queue": "miner:iron",
+      "shortfall": {
+        "plate": 10,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 2,
+        "wire": 6,
+        "refractory": 4,
+        "carbon": 6,
+        "iron": 0,
+        "copperOre": 11,
+        "silicate": 11,
+        "steel": 1
+      }
+    },
+    {
+      "seconds": 240.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 168,
+      "generation": 240,
+      "queue": "miner:iron",
+      "shortfall": {
+        "plate": 3,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 9,
+        "wire": 6,
+        "refractory": 4,
+        "carbon": 9,
+        "iron": 0,
+        "copperOre": 17,
+        "silicate": 17,
+        "steel": 0
+      }
+    },
+    {
+      "seconds": 300.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 206,
+      "generation": 240,
+      "queue": "miner:carbon",
+      "shortfall": {
+        "plate": 9,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 3,
+        "wire": 4,
+        "refractory": 4,
+        "carbon": 12,
+        "iron": 0,
+        "copperOre": 22,
+        "silicate": 23,
+        "steel": 0,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 360.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 234,
+      "generation": 240,
+      "queue": "generator",
+      "shortfall": {
+        "plate": 18,
+        "wire": 8,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 4,
+        "carbon": 15,
+        "iron": 2,
+        "copperOre": 28,
+        "silicate": 29,
+        "steel": 0,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 420.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 234,
+      "generation": 240,
+      "queue": "generator",
+      "shortfall": {
+        "plate": 8,
+        "wire": 4,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 10,
+        "wire": 4,
+        "refractory": 4,
+        "carbon": 23,
+        "iron": 0,
+        "copperOre": 30,
+        "silicate": 35,
+        "steel": 0,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 480.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 234,
+      "generation": 240,
+      "queue": "smelter",
+      "shortfall": {
+        "plate": 16,
+        "refractory": 6,
+        "wire": 4
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 32,
+        "iron": 2,
+        "copperOre": 36,
+        "silicate": 37,
+        "steel": 0,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 540.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 248,
+      "generation": 400,
+      "queue": "smelter",
+      "shortfall": {
+        "plate": 12,
+        "refractory": 0,
+        "wire": 4
+      },
+      "cargo": {
+        "plate": 4,
+        "wire": 0,
+        "refractory": 6,
+        "carbon": 36,
+        "iron": 1,
+        "copperOre": 40,
+        "silicate": 35,
+        "steel": 4,
+        "copper": 2
+      }
+    },
+    {
+      "seconds": 600.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 200,
+      "generation": 400,
+      "queue": "smelter",
+      "shortfall": {
+        "plate": 0,
+        "refractory": 0,
+        "wire": 4
+      },
+      "cargo": {
+        "plate": 16,
+        "wire": 0,
+        "refractory": 6,
+        "carbon": 42,
+        "iron": 9,
+        "copperOre": 46,
+        "silicate": 41,
+        "steel": 0,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 660.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 272,
+      "generation": 400,
+      "queue": "workshop",
+      "shortfall": {
+        "plate": 8,
+        "wire": 6,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 6,
+        "wire": 0,
+        "refractory": 2,
+        "carbon": 48,
+        "iron": 7,
+        "copperOre": 51,
+        "silicate": 43,
+        "steel": 4,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 720.5,
+      "stage": "Bootstrap",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 144,
+      "generation": 400,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 54,
+        "iron": 19,
+        "copperOre": 55,
+        "silicate": 49,
+        "steel": 0,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 780.5,
+      "stage": "Basic Industry I",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 300,
+      "generation": 400,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 3,
+        "carbon": 60,
+        "iron": 31,
+        "copperOre": 52,
+        "silicate": 43,
+        "steel": 0,
+        "copper": 6
+      }
+    },
+    {
+      "seconds": 840.5,
+      "stage": "Basic Industry I",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 300,
+      "generation": 400,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 26,
+        "refractory": 8,
+        "carbon": 66,
+        "iron": 36,
+        "copperOre": 47,
+        "silicate": 45,
+        "steel": 4,
+        "copper": 4
+      }
+    },
+    {
+      "seconds": 900.5,
+      "stage": "Basic Industry I",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 300,
+      "generation": 400,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 11,
+        "wire": 40,
+        "refractory": 8,
+        "carbon": 72,
+        "iron": 30,
+        "copperOre": 53,
+        "silicate": 51,
+        "steel": 8,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 960.5,
+      "stage": "Basic Industry I",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 300,
+      "generation": 400,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 29,
+        "wire": 40,
+        "refractory": 8,
+        "carbon": 78,
+        "iron": 24,
+        "copperOre": 59,
+        "silicate": 57,
+        "steel": 8,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 1020.5,
+      "stage": "Basic Industry I",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 300,
+      "generation": 400,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 47,
+        "wire": 40,
+        "refractory": 8,
+        "carbon": 84,
+        "iron": 18,
+        "copperOre": 65,
+        "silicate": 63,
+        "steel": 8,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 1080.5,
+      "stage": "Basic Industry I",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 300,
+      "generation": 400,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 65,
+        "wire": 40,
+        "refractory": 8,
+        "carbon": 90,
+        "iron": 12,
+        "copperOre": 71,
+        "silicate": 69,
+        "steel": 8,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 1140.5,
+      "stage": "Basic Industry I",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 300,
+      "generation": 400,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 83,
+        "wire": 40,
+        "refractory": 8,
+        "carbon": 96,
+        "iron": 6,
+        "copperOre": 77,
+        "silicate": 75,
+        "steel": 8,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 1200.5,
+      "stage": "Basic Industry I",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 300,
+      "generation": 400,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 101,
+        "wire": 40,
+        "refractory": 8,
+        "carbon": 102,
+        "iron": 0,
+        "copperOre": 83,
+        "silicate": 81,
+        "steel": 8,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 1260.5,
+      "stage": "Basic Industry I",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 172,
+      "generation": 400,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 119,
+        "wire": 40,
+        "refractory": 8,
+        "carbon": 108,
+        "iron": 7,
+        "copperOre": 89,
+        "silicate": 87,
+        "steel": 0,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 1320.5,
+      "stage": "Basic Industry I",
+      "tech": 0,
+      "ratio": 1,
+      "demand": 248,
+      "generation": 400,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 24,
+        "refractory": 0,
+        "carbon": 114,
+        "iron": 19,
+        "copperOre": 80,
+        "silicate": 93,
+        "steel": 0,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 1380.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 300,
+      "generation": 400,
+      "queue": "structural",
+      "shortfall": {
+        "plate": 4,
+        "beam": 6,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 12,
+        "wire": 30,
+        "refractory": 0,
+        "carbon": 120,
+        "iron": 13,
+        "copperOre": 86,
+        "silicate": 99,
+        "steel": 0,
+        "copper": 0
+      }
+    },
+    {
+      "seconds": 1440.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 172,
+      "generation": 400,
+      "queue": "structural",
+      "shortfall": {
+        "plate": 0,
+        "beam": 1,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 16,
+        "wire": 30,
+        "refractory": 0,
+        "carbon": 126,
+        "iron": 15,
+        "copperOre": 92,
+        "silicate": 105,
+        "steel": 0,
+        "copper": 0,
+        "beam": 5
+      }
+    },
+    {
+      "seconds": 1500.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 198,
+      "generation": 400,
+      "queue": "electrical",
+      "shortfall": {
+        "plate": 2,
+        "wire": 0,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 14,
+        "wire": 22,
+        "refractory": 4,
+        "carbon": 132,
+        "iron": 11,
+        "copperOre": 98,
+        "silicate": 103,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0
+      }
+    },
+    {
+      "seconds": 1560.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 246,
+      "generation": 400,
+      "queue": "industrialMiner:carbon",
+      "shortfall": {
+        "plate": 4,
+        "beam": 4,
+        "wire": 2
+      },
+      "cargo": {
+        "plate": 14,
+        "wire": 6,
+        "refractory": 0,
+        "carbon": 138,
+        "iron": 5,
+        "copperOre": 104,
+        "silicate": 109,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0
+      }
+    },
+    {
+      "seconds": 1620.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 246,
+      "generation": 400,
+      "queue": "industrialGenerator",
+      "shortfall": {
+        "plate": 24,
+        "beam": 6,
+        "wire": 12,
+        "refractory": 6
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 144,
+        "iron": 7,
+        "copperOre": 108,
+        "silicate": 113,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0
+      }
+    },
+    {
+      "seconds": 1680.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 181,
+      "generation": 400,
+      "queue": "industrialGenerator",
+      "shortfall": {
+        "plate": 0,
+        "beam": 6,
+        "wire": 0,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 24,
+        "wire": 16,
+        "refractory": 6,
+        "carbon": 155,
+        "iron": 8,
+        "copperOre": 110,
+        "silicate": 109,
+        "steel": 12,
+        "copper": 1,
+        "beam": 0
+      }
+    },
+    {
+      "seconds": 1740.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 239,
+      "generation": 400,
+      "queue": "belt",
+      "shortfall": {
+        "plate": 1
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 4,
+        "refractory": 0,
+        "carbon": 179,
+        "iron": 19,
+        "copperOre": 116,
+        "silicate": 115,
+        "steel": 0,
+        "copper": 1,
+        "beam": 0
+      }
+    },
+    {
+      "seconds": 1800.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 257,
+      "generation": 1000,
+      "queue": "belt",
+      "shortfall": {
+        "plate": 1
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 4,
+        "refractory": 0,
+        "carbon": 198,
+        "iron": 28,
+        "copperOre": 122,
+        "silicate": 121,
+        "steel": 0,
+        "copper": 1,
+        "beam": 0
+      }
+    },
+    {
+      "seconds": 1860.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 303,
+      "generation": 1000,
+      "queue": "industrialMiner:iron",
+      "shortfall": {
+        "plate": 3,
+        "beam": 4,
+        "wire": 2
+      },
+      "cargo": {
+        "plate": 15,
+        "wire": 6,
+        "refractory": 0,
+        "carbon": 216,
+        "iron": 22,
+        "copperOre": 128,
+        "silicate": 127,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0
+      }
+    },
+    {
+      "seconds": 1920.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 333,
+      "generation": 1000,
+      "queue": "industrialSmelter",
+      "shortfall": {
+        "plate": 24,
+        "beam": 6,
+        "refractory": 6,
+        "wire": 6
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 2,
+        "refractory": 0,
+        "carbon": 234,
+        "iron": 22,
+        "copperOre": 131,
+        "silicate": 131,
+        "steel": 2,
+        "copper": 0,
+        "beam": 0
+      }
+    },
+    {
+      "seconds": 1980.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 268,
+      "generation": 1000,
+      "queue": "industrialSmelter",
+      "shortfall": {
+        "plate": 0,
+        "beam": 6,
+        "refractory": 0,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 25,
+        "wire": 16,
+        "refractory": 6,
+        "carbon": 252,
+        "iron": 34,
+        "copperOre": 135,
+        "silicate": 127,
+        "steel": 10,
+        "copper": 0,
+        "beam": 0
+      }
+    },
+    {
+      "seconds": 2040.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 340,
+      "generation": 1000,
+      "queue": "mechanical",
+      "shortfall": {
+        "plate": 17,
+        "rod": 6,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 1,
+        "wire": 8,
+        "refractory": 0,
+        "carbon": 270,
+        "iron": 55,
+        "copperOre": 141,
+        "silicate": 133,
+        "steel": 5,
+        "copper": 0,
+        "beam": 0
+      }
+    },
+    {
+      "seconds": 2100.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 268,
+      "generation": 1000,
+      "queue": "mechanical",
+      "shortfall": {
+        "plate": 0,
+        "rod": 4,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 61,
+        "wire": 20,
+        "refractory": 18,
+        "carbon": 288,
+        "iron": 76,
+        "copperOre": 147,
+        "silicate": 139,
+        "steel": 4,
+        "copper": 0,
+        "beam": 0,
+        "rod": 2
+      }
+    },
+    {
+      "seconds": 2160.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 328,
+      "generation": 680,
+      "queue": "industrialMiner:iron",
+      "shortfall": {
+        "plate": 0,
+        "beam": 3,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 61,
+        "wire": 18,
+        "refractory": 18,
+        "carbon": 306,
+        "iron": 92,
+        "copperOre": 153,
+        "silicate": 145,
+        "steel": 0,
+        "copper": 0,
+        "beam": 1,
+        "rod": 0
+      }
+    },
+    {
+      "seconds": 2220.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 363,
+      "generation": 1280,
+      "queue": "industrialSmelter",
+      "shortfall": {
+        "plate": 17,
+        "beam": 6,
+        "refractory": 0,
+        "wire": 8
+      },
+      "cargo": {
+        "plate": 7,
+        "wire": 0,
+        "refractory": 18,
+        "carbon": 326,
+        "iron": 105,
+        "copperOre": 153,
+        "silicate": 151,
+        "steel": 0,
+        "copper": 1,
+        "beam": 0,
+        "rod": 0
+      }
+    },
+    {
+      "seconds": 2280.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 345,
+      "generation": 1280,
+      "queue": "industrialSmelter",
+      "shortfall": {
+        "plate": 0,
+        "beam": 6,
+        "refractory": 0,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 36,
+        "wire": 16,
+        "refractory": 18,
+        "carbon": 344,
+        "iron": 148,
+        "copperOre": 176,
+        "silicate": 164,
+        "steel": 10,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0
+      }
+    },
+    {
+      "seconds": 2340.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 405,
+      "generation": 1280,
+      "queue": "industrialSmelter",
+      "shortfall": {
+        "plate": 6,
+        "beam": 6,
+        "refractory": 0,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 18,
+        "wire": 8,
+        "refractory": 12,
+        "carbon": 362,
+        "iron": 188,
+        "copperOre": 206,
+        "silicate": 194,
+        "steel": 12,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0
+      }
+    },
+    {
+      "seconds": 2400.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 465,
+      "generation": 1280,
+      "queue": "structural",
+      "shortfall": {
+        "plate": 16,
+        "beam": 6,
+        "wire": 8
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 6,
+        "carbon": 380,
+        "iron": 238,
+        "copperOre": 236,
+        "silicate": 224,
+        "steel": 2,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0
+      }
+    },
+    {
+      "seconds": 2460.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 345,
+      "generation": 1280,
+      "queue": "structural",
+      "shortfall": {
+        "plate": 8,
+        "beam": 0,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 8,
+        "wire": 8,
+        "refractory": 6,
+        "carbon": 398,
+        "iron": 276,
+        "copperOre": 262,
+        "silicate": 254,
+        "steel": 7,
+        "copper": 0,
+        "beam": 6,
+        "rod": 0
+      }
+    },
+    {
+      "seconds": 2520.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 345,
+      "generation": 1280,
+      "queue": "electrical",
+      "shortfall": {
+        "plate": 1,
+        "wire": 0,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 15,
+        "wire": 16,
+        "refractory": 6,
+        "carbon": 416,
+        "iron": 320,
+        "copperOre": 284,
+        "silicate": 284,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0
+      }
+    },
+    {
+      "seconds": 2580.5,
+      "stage": "Expand after tech 1",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 315,
+      "generation": 1280,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 2,
+        "carbon": 434,
+        "iron": 359,
+        "copperOre": 310,
+        "silicate": 314,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0
+      }
+    },
+    {
+      "seconds": 2640.5,
+      "stage": "Component Industry I",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 555,
+      "generation": 1280,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 16,
+        "refractory": 2,
+        "carbon": 452,
+        "iron": 419,
+        "copperOre": 304,
+        "silicate": 344,
+        "steel": 0,
+        "copper": 12,
+        "beam": 0,
+        "rod": 0,
+        "bus": 5
+      }
+    },
+    {
+      "seconds": 2700.5,
+      "stage": "Component Industry I",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 679,
+      "generation": 1280,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 8,
+        "wire": 58,
+        "refractory": 2,
+        "carbon": 470,
+        "iron": 400,
+        "copperOre": 323,
+        "silicate": 374,
+        "steel": 55,
+        "copper": 0,
+        "beam": 0,
+        "rod": 1,
+        "bus": 6,
+        "bearing": 5
+      }
+    },
+    {
+      "seconds": 2760.5,
+      "stage": "Component Industry I",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 499,
+      "generation": 1280,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 24,
+        "wire": 30,
+        "refractory": 2,
+        "carbon": 488,
+        "iron": 447,
+        "copperOre": 353,
+        "silicate": 404,
+        "steel": 34,
+        "copper": 0,
+        "beam": 5,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 6,
+        "motorCore": 6
+      }
+    },
+    {
+      "seconds": 2820.5,
+      "stage": "Component Industry I",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 375,
+      "generation": 1280,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 18,
+        "wire": 30,
+        "refractory": 2,
+        "carbon": 506,
+        "iron": 507,
+        "copperOre": 383,
+        "silicate": 434,
+        "steel": 0,
+        "copper": 0,
+        "beam": 18,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 8,
+        "motorCore": 8
+      }
+    },
+    {
+      "seconds": 2880.5,
+      "stage": "Component Industry I",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 580,
+      "generation": 1280,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 8,
+        "wire": 0,
+        "refractory": 2,
+        "carbon": 524,
+        "iron": 513,
+        "copperOre": 413,
+        "silicate": 464,
+        "steel": 41,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 2940.5,
+      "stage": "Component Industry I",
+      "tech": 1,
+      "ratio": 1,
+      "demand": 580,
+      "generation": 1280,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 48,
+        "wire": 0,
+        "refractory": 2,
+        "carbon": 542,
+        "iron": 483,
+        "copperOre": 443,
+        "silicate": 494,
+        "steel": 89,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3000.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 347,
+      "generation": 1280,
+      "queue": "belt",
+      "shortfall": {
+        "plate": 0
+      },
+      "cargo": {
+        "plate": 15,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 560,
+        "iron": 543,
+        "copperOre": 467,
+        "silicate": 516,
+        "steel": 76,
+        "copper": 0,
+        "beam": 4,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3060.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 475,
+      "generation": 1880,
+      "queue": "industrialGenerator",
+      "shortfall": {
+        "plate": 12,
+        "beam": 2,
+        "wire": 0,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 12,
+        "wire": 12,
+        "refractory": 6,
+        "carbon": 574,
+        "iron": 603,
+        "copperOre": 491,
+        "silicate": 534,
+        "steel": 61,
+        "copper": 0,
+        "beam": 4,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3120.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 475,
+      "generation": 1880,
+      "queue": "industrialMiner:iron",
+      "shortfall": {
+        "plate": 18,
+        "beam": 0,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 8,
+        "refractory": 0,
+        "carbon": 586,
+        "iron": 663,
+        "copperOre": 517,
+        "silicate": 564,
+        "steel": 37,
+        "copper": 0,
+        "beam": 4,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3180.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 475,
+      "generation": 2480,
+      "queue": "industrialMiner:iron",
+      "shortfall": {
+        "plate": 0,
+        "beam": 4,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 18,
+        "wire": 8,
+        "refractory": 0,
+        "carbon": 593,
+        "iron": 718,
+        "copperOre": 543,
+        "silicate": 594,
+        "steel": 4,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3240.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 510,
+      "generation": 2480,
+      "queue": "industrialMiner:copperOre",
+      "shortfall": {
+        "plate": 14,
+        "beam": 0,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 4,
+        "wire": 8,
+        "refractory": 0,
+        "carbon": 599,
+        "iron": 771,
+        "copperOre": 569,
+        "silicate": 624,
+        "steel": 12,
+        "copper": 0,
+        "beam": 4,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3300.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 545,
+      "generation": 2480,
+      "queue": "industrialSmelter",
+      "shortfall": {
+        "plate": 24,
+        "beam": 6,
+        "refractory": 0,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 8,
+        "refractory": 6,
+        "carbon": 605,
+        "iron": 849,
+        "copperOre": 595,
+        "silicate": 642,
+        "steel": 34,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3360.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 580,
+      "generation": 2480,
+      "queue": "industrialSmelter",
+      "shortfall": {
+        "plate": 0,
+        "beam": 6,
+        "refractory": 0,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 24,
+        "wire": 8,
+        "refractory": 6,
+        "carbon": 611,
+        "iron": 969,
+        "copperOre": 653,
+        "silicate": 672,
+        "steel": 8,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3420.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 580,
+      "generation": 2480,
+      "queue": "industrialSmelter",
+      "shortfall": {
+        "plate": 24,
+        "beam": 6,
+        "refractory": 0,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 8,
+        "refractory": 6,
+        "carbon": 617,
+        "iron": 1053,
+        "copperOre": 709,
+        "silicate": 690,
+        "steel": 34,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3480.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 580,
+      "generation": 2480,
+      "queue": "industrialSmelter",
+      "shortfall": {
+        "plate": 0,
+        "beam": 4,
+        "refractory": 0,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 24,
+        "wire": 8,
+        "refractory": 6,
+        "carbon": 623,
+        "iron": 1173,
+        "copperOre": 769,
+        "silicate": 720,
+        "steel": 4,
+        "copper": 0,
+        "beam": 2,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3540.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 580,
+      "generation": 2480,
+      "queue": "industrialSmelter",
+      "shortfall": {
+        "plate": 22,
+        "beam": 6,
+        "refractory": 0,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 2,
+        "wire": 8,
+        "refractory": 6,
+        "carbon": 629,
+        "iron": 1257,
+        "copperOre": 825,
+        "silicate": 738,
+        "steel": 32,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3600.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 880,
+      "generation": 2480,
+      "queue": "structural",
+      "shortfall": {
+        "plate": 16,
+        "beam": 6,
+        "wire": 8
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 635,
+        "iron": 1367,
+        "copperOre": 885,
+        "silicate": 768,
+        "steel": 2,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3660.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 940,
+      "generation": 2480,
+      "queue": "structural",
+      "shortfall": {
+        "plate": 13,
+        "beam": 6,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 3,
+        "wire": 8,
+        "refractory": 0,
+        "carbon": 641,
+        "iron": 1448,
+        "copperOre": 937,
+        "silicate": 798,
+        "steel": 10,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3720.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 970,
+      "generation": 2480,
+      "queue": "structural",
+      "shortfall": {
+        "plate": 16,
+        "beam": 6,
+        "wire": 8
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 647,
+        "iron": 1546,
+        "copperOre": 997,
+        "silicate": 828,
+        "steel": 4,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3780.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 640,
+      "generation": 2480,
+      "queue": "structural",
+      "shortfall": {
+        "plate": 0,
+        "beam": 6,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 16,
+        "wire": 8,
+        "refractory": 0,
+        "carbon": 653,
+        "iron": 1625,
+        "copperOre": 1049,
+        "silicate": 858,
+        "steel": 4,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3840.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 1120,
+      "generation": 2480,
+      "queue": "structural",
+      "shortfall": {
+        "plate": 14,
+        "beam": 6,
+        "wire": 4
+      },
+      "cargo": {
+        "plate": 2,
+        "wire": 4,
+        "refractory": 0,
+        "carbon": 659,
+        "iron": 1703,
+        "copperOre": 1101,
+        "silicate": 888,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3900.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 640,
+      "generation": 2480,
+      "queue": "electrical",
+      "shortfall": {
+        "plate": 4,
+        "wire": 0,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 12,
+        "wire": 16,
+        "refractory": 4,
+        "carbon": 665,
+        "iron": 1793,
+        "copperOre": 1153,
+        "silicate": 910,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 3960.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 640,
+      "generation": 2480,
+      "queue": "electrical",
+      "shortfall": {
+        "plate": 4,
+        "wire": 0,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 12,
+        "wire": 16,
+        "refractory": 4,
+        "carbon": 671,
+        "iron": 1881,
+        "copperOre": 1197,
+        "silicate": 924,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 4020.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 550,
+      "generation": 2480,
+      "queue": "electrical",
+      "shortfall": {
+        "plate": 0,
+        "wire": 2,
+        "refractory": 0
+      },
+      "cargo": {
+        "plate": 16,
+        "wire": 14,
+        "refractory": 4,
+        "carbon": 677,
+        "iron": 1969,
+        "copperOre": 1241,
+        "silicate": 938,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 4080.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 610,
+      "generation": 2480,
+      "queue": "mechanical",
+      "shortfall": {
+        "plate": 0,
+        "rod": 6,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 18,
+        "wire": 8,
+        "refractory": 0,
+        "carbon": 683,
+        "iron": 2052,
+        "copperOre": 1289,
+        "silicate": 960,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 4140.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 820,
+      "generation": 2480,
+      "queue": "mechanical",
+      "shortfall": {
+        "plate": 7,
+        "rod": 6,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 11,
+        "wire": 8,
+        "refractory": 0,
+        "carbon": 689,
+        "iron": 2109,
+        "copperOre": 1337,
+        "silicate": 990,
+        "steel": 1,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 4200.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 970,
+      "generation": 2480,
+      "queue": "mechanical",
+      "shortfall": {
+        "plate": 18,
+        "rod": 6,
+        "wire": 8
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 695,
+        "iron": 2203,
+        "copperOre": 1389,
+        "silicate": 1020,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 4260.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 948,
+      "generation": 2480,
+      "queue": "fluid",
+      "shortfall": {
+        "plate": 0,
+        "frame": 4,
+        "pump": 2,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 29,
+        "wire": 6,
+        "refractory": 0,
+        "carbon": 701,
+        "iron": 2242,
+        "copperOre": 1442,
+        "silicate": 1050,
+        "steel": 14,
+        "copper": 0,
+        "beam": 0,
+        "rod": 2,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0
+      }
+    },
+    {
+      "seconds": 4320.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 584,
+      "generation": 2480,
+      "queue": "fluid",
+      "shortfall": {
+        "plate": 0,
+        "frame": 0,
+        "pump": 2,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 18,
+        "wire": 6,
+        "refractory": 0,
+        "carbon": 707,
+        "iron": 2362,
+        "copperOre": 1502,
+        "silicate": 1080,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 2,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 4
+      }
+    },
+    {
+      "seconds": 4380.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 940,
+      "generation": 2480,
+      "queue": "fluid",
+      "shortfall": {
+        "plate": 16,
+        "frame": 4,
+        "pump": 2,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 0,
+        "wire": 14,
+        "refractory": 0,
+        "carbon": 713,
+        "iron": 2417,
+        "copperOre": 1555,
+        "silicate": 1110,
+        "steel": 30,
+        "copper": 0,
+        "beam": 12,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0
+      }
+    },
+    {
+      "seconds": 4440.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 648,
+      "generation": 2480,
+      "queue": "fluid",
+      "shortfall": {
+        "plate": 0,
+        "frame": 0,
+        "pump": 2,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 22,
+        "wire": 14,
+        "refractory": 0,
+        "carbon": 719,
+        "iron": 2537,
+        "copperOre": 1615,
+        "silicate": 1140,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 2,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 4,
+        "motor": 0,
+        "pump": 0
+      }
+    },
+    {
+      "seconds": 4500.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 584,
+      "generation": 2480,
+      "queue": "fluid",
+      "shortfall": {
+        "plate": 0,
+        "frame": 0,
+        "pump": 2,
+        "wire": 0
+      },
+      "cargo": {
+        "plate": 18,
+        "wire": 6,
+        "refractory": 0,
+        "carbon": 725,
+        "iron": 2657,
+        "copperOre": 1675,
+        "silicate": 1170,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 2,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 4,
+        "motor": 0,
+        "pump": 0
+      }
+    },
+    {
+      "seconds": 4560.5,
+      "stage": "Expand after tech 2",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 520,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 731,
+        "iron": 2777,
+        "copperOre": 1735,
+        "silicate": 1200,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0
+      }
+    },
+    {
+      "seconds": 4620.5,
+      "stage": "Industrial Construction I",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 1216,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 737,
+        "iron": 2855,
+        "copperOre": 1795,
+        "silicate": 1230,
+        "steel": 19,
+        "copper": 0,
+        "beam": 0,
+        "rod": 9,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0
+      }
+    },
+    {
+      "seconds": 4680.5,
+      "stage": "Industrial Construction I",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 1120,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 84,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 743,
+        "iron": 2799,
+        "copperOre": 1851,
+        "silicate": 1260,
+        "steel": 78,
+        "copper": 0,
+        "beam": 0,
+        "rod": 4,
+        "bus": 0,
+        "bearing": 24,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0
+      }
+    },
+    {
+      "seconds": 4740.5,
+      "stage": "Industrial Construction I",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 1256,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 20,
+        "wire": 20,
+        "refractory": 0,
+        "carbon": 749,
+        "iron": 2919,
+        "copperOre": 1839,
+        "silicate": 1290,
+        "steel": 0,
+        "copper": 0,
+        "beam": 6,
+        "rod": 4,
+        "bus": 2,
+        "bearing": 4,
+        "electrical": 2,
+        "motorCore": 4,
+        "frame": 6,
+        "motor": 0,
+        "pump": 0
+      }
+    },
+    {
+      "seconds": 4800.5,
+      "stage": "Industrial Construction I",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 520,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 755,
+        "iron": 3039,
+        "copperOre": 1899,
+        "silicate": 1320,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 16,
+        "motor": 8,
+        "pump": 4,
+        "power": 4,
+        "control": 4
+      }
+    },
+    {
+      "seconds": 4860.5,
+      "stage": "Industrial Construction I",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 1150,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 230,
+        "refractory": 0,
+        "carbon": 761,
+        "iron": 3159,
+        "copperOre": 1779,
+        "silicate": 1350,
+        "steel": 0,
+        "copper": 51,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0
+      }
+    },
+    {
+      "seconds": 4920.5,
+      "stage": "Industrial Construction I",
+      "tech": 2,
+      "ratio": 1,
+      "demand": 1390,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 28,
+        "wire": 312,
+        "refractory": 0,
+        "carbon": 767,
+        "iron": 3179,
+        "copperOre": 1759,
+        "silicate": 1380,
+        "steel": 58,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 40,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0
+      }
+    },
+    {
+      "seconds": 4980.5,
+      "stage": "Industrial Construction I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 1390,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 220,
+        "wire": 280,
+        "refractory": 0,
+        "carbon": 773,
+        "iron": 3119,
+        "copperOre": 1819,
+        "silicate": 1410,
+        "steel": 46,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 24,
+        "bearing": 0,
+        "electrical": 16,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0
+      }
+    },
+    {
+      "seconds": 5040.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 1360,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 400,
+        "wire": 232,
+        "refractory": 0,
+        "carbon": 779,
+        "iron": 3059,
+        "copperOre": 1879,
+        "silicate": 1440,
+        "steel": 26,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 12,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 4,
+        "control": 0
+      }
+    },
+    {
+      "seconds": 5100.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 1120,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 388,
+        "wire": 208,
+        "refractory": 0,
+        "carbon": 785,
+        "iron": 2999,
+        "copperOre": 1939,
+        "silicate": 1470,
+        "steel": 36,
+        "copper": 0,
+        "beam": 85,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 12,
+        "control": 12
+      }
+    },
+    {
+      "seconds": 5160.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 760,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 340,
+        "wire": 208,
+        "refractory": 0,
+        "carbon": 791,
+        "iron": 2989,
+        "copperOre": 1999,
+        "silicate": 1500,
+        "steel": 70,
+        "copper": 0,
+        "beam": 96,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 8,
+        "motor": 0,
+        "pump": 0,
+        "power": 12,
+        "control": 12
+      }
+    },
+    {
+      "seconds": 5220.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 1016,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 236,
+        "wire": 208,
+        "refractory": 0,
+        "carbon": 797,
+        "iron": 3109,
+        "copperOre": 2059,
+        "silicate": 1530,
+        "steel": 54,
+        "copper": 0,
+        "beam": 0,
+        "rod": 8,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 48,
+        "motor": 0,
+        "pump": 0,
+        "power": 12,
+        "control": 12
+      }
+    },
+    {
+      "seconds": 5280.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 776,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 180,
+        "wire": 208,
+        "refractory": 0,
+        "carbon": 803,
+        "iron": 3229,
+        "copperOre": 2119,
+        "silicate": 1560,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 76,
+        "bus": 0,
+        "bearing": 56,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 48,
+        "motor": 0,
+        "pump": 0,
+        "power": 12,
+        "control": 12
+      }
+    },
+    {
+      "seconds": 5340.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 776,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 108,
+        "wire": 192,
+        "refractory": 0,
+        "carbon": 809,
+        "iron": 3349,
+        "copperOre": 2179,
+        "silicate": 1590,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 12,
+        "bus": 0,
+        "bearing": 120,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 48,
+        "motor": 0,
+        "pump": 0,
+        "power": 12,
+        "control": 12
+      }
+    },
+    {
+      "seconds": 5400.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 776,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 68,
+        "wire": 112,
+        "refractory": 0,
+        "carbon": 815,
+        "iron": 3469,
+        "copperOre": 2239,
+        "silicate": 1620,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 12,
+        "bus": 0,
+        "bearing": 80,
+        "electrical": 0,
+        "motorCore": 40,
+        "frame": 48,
+        "motor": 0,
+        "pump": 0,
+        "power": 12,
+        "control": 12
+      }
+    },
+    {
+      "seconds": 5460.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 776,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 40,
+        "wire": 56,
+        "refractory": 0,
+        "carbon": 821,
+        "iron": 3589,
+        "copperOre": 2299,
+        "silicate": 1650,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 12,
+        "bus": 0,
+        "bearing": 52,
+        "electrical": 0,
+        "motorCore": 28,
+        "frame": 48,
+        "motor": 16,
+        "pump": 0,
+        "power": 12,
+        "control": 12
+      }
+    },
+    {
+      "seconds": 5520.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 776,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 4,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 827,
+        "iron": 3709,
+        "copperOre": 2359,
+        "silicate": 1680,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 4,
+        "bus": 0,
+        "bearing": 24,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 48,
+        "motor": 44,
+        "pump": 0,
+        "power": 12,
+        "control": 12
+      }
+    },
+    {
+      "seconds": 5580.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 776,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 833,
+        "iron": 3829,
+        "copperOre": 2419,
+        "silicate": 1710,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 32,
+        "motor": 16,
+        "pump": 12,
+        "power": 12,
+        "control": 12
+      }
+    },
+    {
+      "seconds": 5640.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 776,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 839,
+        "iron": 3949,
+        "copperOre": 2479,
+        "silicate": 1740,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 32,
+        "motor": 16,
+        "pump": 12,
+        "power": 12,
+        "control": 12
+      }
+    },
+    {
+      "seconds": 5700.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 1180,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 12,
+        "carbon": 845,
+        "iron": 3976,
+        "copperOre": 2539,
+        "silicate": 1746,
+        "steel": 79,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0
+      }
+    },
+    {
+      "seconds": 5760.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 1180,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 140,
+        "wire": 0,
+        "refractory": 12,
+        "carbon": 851,
+        "iron": 3916,
+        "copperOre": 2599,
+        "silicate": 1776,
+        "steel": 119,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0
+      }
+    },
+    {
+      "seconds": 5820.5,
+      "stage": "Orbital Operations I",
+      "tech": 3,
+      "ratio": 1,
+      "demand": 1180,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 332,
+        "wire": 0,
+        "refractory": 12,
+        "carbon": 857,
+        "iron": 3856,
+        "copperOre": 2659,
+        "silicate": 1806,
+        "steel": 107,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0
+      }
+    },
+    {
+      "seconds": 5880.5,
+      "stage": "Bay: Foundation \u0026 frame",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1120,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 520,
+        "wire": 0,
+        "refractory": 12,
+        "carbon": 863,
+        "iron": 3799,
+        "copperOre": 2719,
+        "silicate": 1836,
+        "steel": 96,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0
+      }
+    },
+    {
+      "seconds": 5940.5,
+      "stage": "Bay: Foundation \u0026 frame",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1120,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 712,
+        "wire": 0,
+        "refractory": 12,
+        "carbon": 869,
+        "iron": 3739,
+        "copperOre": 2779,
+        "silicate": 1866,
+        "steel": 84,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0
+      }
+    },
+    {
+      "seconds": 6000.5,
+      "stage": "Bay: Foundation \u0026 frame",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1120,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 880,
+        "wire": 0,
+        "refractory": 12,
+        "carbon": 875,
+        "iron": 3679,
+        "copperOre": 2839,
+        "silicate": 1896,
+        "steel": 88,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0
+      }
+    },
+    {
+      "seconds": 6060.5,
+      "stage": "Bay: Foundation \u0026 frame",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1120,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 872,
+        "wire": 0,
+        "refractory": 12,
+        "carbon": 881,
+        "iron": 3619,
+        "copperOre": 2899,
+        "silicate": 1926,
+        "steel": 260,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 8
+      }
+    },
+    {
+      "seconds": 6120.5,
+      "stage": "Bay: Foundation \u0026 frame",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1120,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 872,
+        "wire": 0,
+        "refractory": 12,
+        "carbon": 887,
+        "iron": 3559,
+        "copperOre": 2959,
+        "silicate": 1956,
+        "steel": 336,
+        "copper": 0,
+        "beam": 48,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6180.5,
+      "stage": "Bay: Foundation \u0026 frame",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1120,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 872,
+        "wire": 0,
+        "refractory": 12,
+        "carbon": 893,
+        "iron": 3499,
+        "copperOre": 3019,
+        "silicate": 1986,
+        "steel": 260,
+        "copper": 0,
+        "beam": 176,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6240.5,
+      "stage": "Bay: Foundation \u0026 frame",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1120,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 872,
+        "wire": 0,
+        "refractory": 12,
+        "carbon": 899,
+        "iron": 3439,
+        "copperOre": 3079,
+        "silicate": 2016,
+        "steel": 184,
+        "copper": 0,
+        "beam": 304,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6300.5,
+      "stage": "Bay: Foundation \u0026 frame",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1360,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 848,
+        "wire": 64,
+        "refractory": 12,
+        "carbon": 905,
+        "iron": 3482,
+        "copperOre": 3036,
+        "silicate": 2046,
+        "steel": 111,
+        "copper": 57,
+        "beam": 366,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6360.5,
+      "stage": "Bay: Foundation \u0026 frame",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1380,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 602,
+        "wire": 448,
+        "refractory": 0,
+        "carbon": 911,
+        "iron": 3602,
+        "copperOre": 2916,
+        "silicate": 2076,
+        "steel": 111,
+        "copper": 45,
+        "beam": 140,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 42,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6420.5,
+      "stage": "Bay: Foundation \u0026 frame",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1380,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 452,
+        "wire": 582,
+        "refractory": 0,
+        "carbon": 917,
+        "iron": 3722,
+        "copperOre": 2796,
+        "silicate": 2106,
+        "steel": 104,
+        "copper": 70,
+        "beam": 0,
+        "rod": 0,
+        "bus": 40,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 66,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6480.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1256,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 412,
+        "wire": 566,
+        "refractory": 0,
+        "carbon": 923,
+        "iron": 3842,
+        "copperOre": 2772,
+        "silicate": 2136,
+        "steel": 34,
+        "copper": 0,
+        "beam": 0,
+        "rod": 100,
+        "bus": 120,
+        "bearing": 32,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 66,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6540.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1046,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 332,
+        "wire": 508,
+        "refractory": 0,
+        "carbon": 929,
+        "iron": 3962,
+        "copperOre": 2832,
+        "silicate": 2166,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 102,
+        "bus": 91,
+        "bearing": 112,
+        "electrical": 29,
+        "motorCore": 0,
+        "frame": 66,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6600.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1046,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 274,
+        "wire": 428,
+        "refractory": 0,
+        "carbon": 935,
+        "iron": 4082,
+        "copperOre": 2892,
+        "silicate": 2196,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 52,
+        "bus": 59,
+        "bearing": 162,
+        "electrical": 61,
+        "motorCore": 0,
+        "frame": 66,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6660.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1046,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 218,
+        "wire": 278,
+        "refractory": 0,
+        "carbon": 941,
+        "iron": 4202,
+        "copperOre": 2952,
+        "silicate": 2226,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 52,
+        "bus": 32,
+        "bearing": 114,
+        "electrical": 72,
+        "motorCore": 48,
+        "frame": 66,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6720.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1046,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 160,
+        "wire": 162,
+        "refractory": 0,
+        "carbon": 947,
+        "iron": 4322,
+        "copperOre": 3012,
+        "silicate": 2256,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 52,
+        "bus": 16,
+        "bearing": 80,
+        "electrical": 32,
+        "motorCore": 62,
+        "frame": 66,
+        "motor": 6,
+        "pump": 0,
+        "power": 24,
+        "control": 0,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6780.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1046,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 96,
+        "wire": 34,
+        "refractory": 0,
+        "carbon": 953,
+        "iron": 4442,
+        "copperOre": 3072,
+        "silicate": 2286,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 52,
+        "bus": 16,
+        "bearing": 40,
+        "electrical": 8,
+        "motorCore": 22,
+        "frame": 66,
+        "motor": 46,
+        "pump": 0,
+        "power": 24,
+        "control": 24,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6840.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1024,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 64,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 959,
+        "iron": 4562,
+        "copperOre": 3132,
+        "silicate": 2316,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 36,
+        "bus": 0,
+        "bearing": 32,
+        "electrical": 0,
+        "motorCore": 14,
+        "frame": 56,
+        "motor": 46,
+        "pump": 4,
+        "power": 10,
+        "control": 20,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6900.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 1024,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 48,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 965,
+        "iron": 4682,
+        "copperOre": 3192,
+        "silicate": 2346,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 28,
+        "bus": 0,
+        "bearing": 14,
+        "electrical": 0,
+        "motorCore": 14,
+        "frame": 40,
+        "motor": 12,
+        "pump": 16,
+        "power": 6,
+        "control": 20,
+        "drive": 0,
+        "armor": 12
+      }
+    },
+    {
+      "seconds": 6960.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 904,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 44,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 971,
+        "iron": 4802,
+        "copperOre": 3252,
+        "silicate": 2376,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 28,
+        "bus": 0,
+        "bearing": 14,
+        "electrical": 0,
+        "motorCore": 14,
+        "frame": 38,
+        "motor": 12,
+        "pump": 12,
+        "power": 6,
+        "control": 20,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 4,
+        "cooling": 2
+      }
+    },
+    {
+      "seconds": 7020.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 949,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 24,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 977,
+        "iron": 4922,
+        "copperOre": 3312,
+        "silicate": 2406,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 22,
+        "motor": 4,
+        "pump": 12,
+        "power": 6,
+        "control": 20,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 4,
+        "cooling": 2,
+        "actuator": 2
+      }
+    },
+    {
+      "seconds": 7080.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 855,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 14,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 983,
+        "iron": 5042,
+        "copperOre": 3372,
+        "silicate": 2436,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 13,
+        "motor": 0,
+        "pump": 6,
+        "power": 6,
+        "control": 13,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 4,
+        "cooling": 4,
+        "actuator": 0,
+        "airframe": 1
+      }
+    },
+    {
+      "seconds": 7140.5,
+      "stage": "Bay: Heavy mechanisms",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 855,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 14,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 989,
+        "iron": 5162,
+        "copperOre": 3432,
+        "silicate": 2466,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 13,
+        "motor": 0,
+        "pump": 6,
+        "power": 6,
+        "control": 13,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 4,
+        "cooling": 4,
+        "actuator": 0,
+        "airframe": 1
+      }
+    },
+    {
+      "seconds": 7200.5,
+      "stage": "Bay: Power \u0026 thermal",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 860,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 14,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 995,
+        "iron": 5282,
+        "copperOre": 3492,
+        "silicate": 2496,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 1,
+        "motor": 0,
+        "pump": 6,
+        "power": 2,
+        "control": 9,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 1,
+        "avionics": 1
+      }
+    },
+    {
+      "seconds": 7260.5,
+      "stage": "Bay: Power \u0026 thermal",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 732,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 14,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 1001,
+        "iron": 5402,
+        "copperOre": 3552,
+        "silicate": 2526,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 1,
+        "motor": 0,
+        "pump": 6,
+        "power": 2,
+        "control": 9,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 1,
+        "avionics": 1,
+        "ammoHandling": 2,
+        "thruster": 2
+      }
+    },
+    {
+      "seconds": 7320.5,
+      "stage": "Bay: Power \u0026 thermal",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 732,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 12,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 1007,
+        "iron": 5522,
+        "copperOre": 3612,
+        "silicate": 2556,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 4,
+        "power": 2,
+        "control": 8,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 1,
+        "avionics": 1,
+        "ammoHandling": 2,
+        "thruster": 2,
+        "bayFuel": 1
+      }
+    },
+    {
+      "seconds": 7380.5,
+      "stage": "Bay: Service systems",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 588,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 12,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 1013,
+        "iron": 5642,
+        "copperOre": 3672,
+        "silicate": 2586,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 4,
+        "power": 2,
+        "control": 8,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 1,
+        "avionics": 1,
+        "ammoHandling": 2,
+        "thruster": 2,
+        "bayFuel": 1,
+        "mount": 2
+      }
+    },
+    {
+      "seconds": 7440.5,
+      "stage": "Bay: Service systems",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 588,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 12,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 1019,
+        "iron": 5762,
+        "copperOre": 3732,
+        "silicate": 2616,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 4,
+        "power": 2,
+        "control": 8,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 1,
+        "avionics": 1,
+        "ammoHandling": 2,
+        "thruster": 2,
+        "bayFuel": 1,
+        "mount": 2
+      }
+    },
+    {
+      "seconds": 7500.5,
+      "stage": "Bay: Service systems",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 590,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 1025,
+        "iron": 5882,
+        "copperOre": 3792,
+        "silicate": 2646,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 2,
+        "control": 4,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 1,
+        "avionics": 1,
+        "ammoHandling": 0,
+        "thruster": 2,
+        "bayFuel": 0,
+        "mount": 2,
+        "fuelSystem": 1
+      }
+    },
+    {
+      "seconds": 7560.5,
+      "stage": "Bay: Service systems",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 590,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 10,
+        "refractory": 0,
+        "carbon": 1031,
+        "iron": 6002,
+        "copperOre": 3852,
+        "silicate": 2676,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 2,
+        "control": 4,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 1,
+        "avionics": 1,
+        "ammoHandling": 0,
+        "thruster": 2,
+        "bayFuel": 0,
+        "mount": 2,
+        "fuelSystem": 1
+      }
+    },
+    {
+      "seconds": 7620.5,
+      "stage": "Bay: Commissioning",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 640,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 1037,
+        "iron": 6122,
+        "copperOre": 3912,
+        "silicate": 2706,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 1,
+        "avionics": 1,
+        "ammoHandling": 0,
+        "thruster": 2,
+        "bayFuel": 0,
+        "mount": 2,
+        "fuelSystem": 1
+      }
+    },
+    {
+      "seconds": 7680.5,
+      "stage": "Bay: Commissioning",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 640,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 1043,
+        "iron": 6242,
+        "copperOre": 3972,
+        "silicate": 2736,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 1,
+        "avionics": 1,
+        "ammoHandling": 0,
+        "thruster": 2,
+        "bayFuel": 0,
+        "mount": 2,
+        "fuelSystem": 1
+      }
+    },
+    {
+      "seconds": 7740.5,
+      "stage": "Fighter: Skeleton setup",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 640,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 1049,
+        "iron": 6362,
+        "copperOre": 4032,
+        "silicate": 2766,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 0,
+        "avionics": 1,
+        "ammoHandling": 0,
+        "thruster": 2,
+        "bayFuel": 0,
+        "mount": 2,
+        "fuelSystem": 1
+      }
+    },
+    {
+      "seconds": 7800.5,
+      "stage": "Fighter: Skeleton setup",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 640,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 1055,
+        "iron": 6482,
+        "copperOre": 4092,
+        "silicate": 2796,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 0,
+        "avionics": 1,
+        "ammoHandling": 0,
+        "thruster": 2,
+        "bayFuel": 0,
+        "mount": 2,
+        "fuelSystem": 1
+      }
+    },
+    {
+      "seconds": 7860.5,
+      "stage": "Fighter: Propulsion \u0026 fuel",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 680,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 1061,
+        "iron": 6602,
+        "copperOre": 4152,
+        "silicate": 2826,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 0,
+        "avionics": 1,
+        "ammoHandling": 0,
+        "thruster": 0,
+        "bayFuel": 0,
+        "mount": 2,
+        "fuelSystem": 0
+      }
+    },
+    {
+      "seconds": 7920.5,
+      "stage": "Fighter: Propulsion \u0026 fuel",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 680,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 1067,
+        "iron": 6722,
+        "copperOre": 4212,
+        "silicate": 2856,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 0,
+        "avionics": 1,
+        "ammoHandling": 0,
+        "thruster": 0,
+        "bayFuel": 0,
+        "mount": 2,
+        "fuelSystem": 0
+      }
+    },
+    {
+      "seconds": 7980.5,
+      "stage": "Fighter: Electrical \u0026 control",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 680,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 1073,
+        "iron": 6842,
+        "copperOre": 4272,
+        "silicate": 2886,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 12,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 0,
+        "avionics": 0,
+        "ammoHandling": 0,
+        "thruster": 0,
+        "bayFuel": 0,
+        "mount": 2,
+        "fuelSystem": 0
+      }
+    },
+    {
+      "seconds": 8040.5,
+      "stage": "Fighter: Weapons \u0026 armor",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 680,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 1079,
+        "iron": 6962,
+        "copperOre": 4332,
+        "silicate": 2916,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 0,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 0,
+        "avionics": 0,
+        "ammoHandling": 0,
+        "thruster": 0,
+        "bayFuel": 0,
+        "mount": 0,
+        "fuelSystem": 0
+      }
+    },
+    {
+      "seconds": 8100.5,
+      "stage": "Fighter: Weapons \u0026 armor",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 680,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 1085,
+        "iron": 7082,
+        "copperOre": 4392,
+        "silicate": 2946,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 0,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 0,
+        "avionics": 0,
+        "ammoHandling": 0,
+        "thruster": 0,
+        "bayFuel": 0,
+        "mount": 0,
+        "fuelSystem": 0
+      }
+    },
+    {
+      "seconds": 8160.5,
+      "stage": "Fighter: Calibration \u0026 pressure test",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 700,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 1091,
+        "iron": 7202,
+        "copperOre": 4452,
+        "silicate": 2976,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 0,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 0,
+        "avionics": 0,
+        "ammoHandling": 0,
+        "thruster": 0,
+        "bayFuel": 0,
+        "mount": 0,
+        "fuelSystem": 0
+      }
+    },
+    {
+      "seconds": 8220.5,
+      "stage": "Fighter: Calibration \u0026 pressure test",
+      "tech": 4,
+      "ratio": 1,
+      "demand": 700,
+      "generation": 2480,
+      "queue": null,
+      "shortfall": {},
+      "cargo": {
+        "plate": 0,
+        "wire": 0,
+        "refractory": 0,
+        "carbon": 1097,
+        "iron": 7322,
+        "copperOre": 4512,
+        "silicate": 3006,
+        "steel": 0,
+        "copper": 0,
+        "beam": 0,
+        "rod": 0,
+        "bus": 0,
+        "bearing": 0,
+        "electrical": 0,
+        "motorCore": 0,
+        "frame": 0,
+        "motor": 0,
+        "pump": 0,
+        "power": 0,
+        "control": 0,
+        "drive": 0,
+        "armor": 0,
+        "cabinet": 0,
+        "cooling": 0,
+        "actuator": 0,
+        "airframe": 0,
+        "avionics": 0,
+        "ammoHandling": 0,
+        "thruster": 0,
+        "bayFuel": 0,
+        "mount": 0,
+        "fuelSystem": 0
+      }
+    }
+  ],
+  "success": true,
+  "error": null,
+  "scale": 2,
+  "upgrade": true,
+  "step": 0.5,
+  "logisticsTiles": 0,
+  "seconds": 8251.5,
+  "brownoutSeconds": 2.5,
+  "milestones": [
+    {
+      "stage": "Bootstrap",
+      "seconds": 750.5,
+      "tech": 0,
+      "machines": 30,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Basic Industry I",
+      "seconds": 1321,
+      "tech": 1,
+      "machines": 30,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Expand after tech 1",
+      "seconds": 2616.5,
+      "tech": 1,
+      "machines": 54,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Component Industry I",
+      "seconds": 2966,
+      "tech": 2,
+      "machines": 54,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Expand after tech 2",
+      "seconds": 4606.5,
+      "tech": 2,
+      "machines": 107,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Industrial Construction I",
+      "seconds": 4980.5,
+      "tech": 3,
+      "machines": 107,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Expand after tech 3",
+      "seconds": 4980.5,
+      "tech": 3,
+      "machines": 107,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Orbital Operations I",
+      "seconds": 5850,
+      "tech": 4,
+      "machines": 107,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Bay: Foundation \u0026 frame",
+      "seconds": 6442,
+      "tech": 4,
+      "machines": 108,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Bay: Heavy mechanisms",
+      "seconds": 7181,
+      "tech": 4,
+      "machines": 108,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Bay: Power \u0026 thermal",
+      "seconds": 7349,
+      "tech": 4,
+      "machines": 108,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Bay: Service systems",
+      "seconds": 7603.5,
+      "tech": 4,
+      "machines": 108,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Bay: Commissioning",
+      "seconds": 7699.5,
+      "tech": 4,
+      "machines": 108,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Fighter: Skeleton setup",
+      "seconds": 7819.5,
+      "tech": 4,
+      "machines": 108,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Fighter: Propulsion \u0026 fuel",
+      "seconds": 7939.5,
+      "tech": 4,
+      "machines": 108,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Fighter: Electrical \u0026 control",
+      "seconds": 8035.5,
+      "tech": 4,
+      "machines": 108,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Fighter: Weapons \u0026 armor",
+      "seconds": 8155.5,
+      "tech": 4,
+      "machines": 108,
+      "brownoutSeconds": 2.5
+    },
+    {
+      "stage": "Fighter: Calibration \u0026 pressure test",
+      "seconds": 8251.5,
+      "tech": 4,
+      "machines": 108,
+      "brownoutSeconds": 2.5
+    }
+  ],
+  "events": [
+    {
+      "time": 0,
+      "stage": "Bootstrap",
+      "kind": "stage",
+      "detail": "Bootstrap"
+    },
+    {
+      "time": 0,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 0,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 0.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 0.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 2,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 2,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 2.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 2.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 4,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 4,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 4.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 4.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 5.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 5.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 6,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 6,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 6.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 6.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 7,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 7,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 7.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "miner:iron"
+    },
+    {
+      "time": 7.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "miner:iron",
+      "waitSeconds": 0
+    },
+    {
+      "time": 8,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "miner:copperOre"
+    },
+    {
+      "time": 8,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "miner:copperOre",
+      "waitSeconds": 0
+    },
+    {
+      "time": 8.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "miner:carbon"
+    },
+    {
+      "time": 8.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "miner:carbon",
+      "waitSeconds": 0
+    },
+    {
+      "time": 9,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "smelter"
+    },
+    {
+      "time": 9,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "smelter",
+      "waitSeconds": 0
+    },
+    {
+      "time": 9.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "workshop"
+    },
+    {
+      "time": 9.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "workshop",
+      "waitSeconds": 0
+    },
+    {
+      "time": 10,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "generator"
+    },
+    {
+      "time": 10,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "generator",
+      "waitSeconds": 0
+    },
+    {
+      "time": 10.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "miner:silicate"
+    },
+    {
+      "time": 10.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "miner:silicate",
+      "waitSeconds": 0
+    },
+    {
+      "time": 11,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "smelter"
+    },
+    {
+      "time": 11,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "smelter",
+      "waitSeconds": 0
+    },
+    {
+      "time": 142.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "workshop"
+    },
+    {
+      "time": 142.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "workshop",
+      "waitSeconds": 131
+    },
+    {
+      "time": 262.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "miner:iron"
+    },
+    {
+      "time": 262.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "miner:iron",
+      "waitSeconds": 119.5
+    },
+    {
+      "time": 342.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "miner:carbon"
+    },
+    {
+      "time": 342.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "miner:carbon",
+      "waitSeconds": 79.5
+    },
+    {
+      "time": 470.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "generator"
+    },
+    {
+      "time": 470.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "generator",
+      "waitSeconds": 127.5
+    },
+    {
+      "time": 605.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "smelter"
+    },
+    {
+      "time": 605.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "smelter",
+      "waitSeconds": 134.5
+    },
+    {
+      "time": 710.5,
+      "stage": "Bootstrap",
+      "kind": "build",
+      "detail": "workshop"
+    },
+    {
+      "time": 710.5,
+      "stage": "Bootstrap",
+      "kind": "funding",
+      "detail": "workshop",
+      "waitSeconds": 104.5
+    },
+    {
+      "time": 750.5,
+      "stage": "Basic Industry I",
+      "kind": "stage",
+      "detail": "Basic Industry I"
+    },
+    {
+      "time": 1321,
+      "stage": "Expand after tech 1",
+      "kind": "stage",
+      "detail": "Expand after tech 1"
+    },
+    {
+      "time": 1441,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "structural"
+    },
+    {
+      "time": 1441,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "structural",
+      "waitSeconds": 120
+    },
+    {
+      "time": 1503.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "electrical"
+    },
+    {
+      "time": 1503.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "electrical",
+      "waitSeconds": 62
+    },
+    {
+      "time": 1616,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "industrialMiner:carbon"
+    },
+    {
+      "time": 1616,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "industrialMiner:carbon",
+      "waitSeconds": 112
+    },
+    {
+      "time": 1661,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "miner:carbon"
+    },
+    {
+      "time": 1661,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "miner:carbon"
+    },
+    {
+      "time": 1723.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "industrialGenerator"
+    },
+    {
+      "time": 1723.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "industrialGenerator",
+      "waitSeconds": 107
+    },
+    {
+      "time": 1724,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1724,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1724.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1724.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1725,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1725,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1725.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1725.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1726,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1726,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1726.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1726.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1727,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1727,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1727.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1727.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1728,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1728,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1728.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1728.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1729,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1729,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1729.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1729.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1730,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1730,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1730.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1730.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1731,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1731,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1731.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1731.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 1764,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1764,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 32
+    },
+    {
+      "time": 1776.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1776.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 12
+    },
+    {
+      "time": 1789,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1789,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 12
+    },
+    {
+      "time": 1801.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 1801.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 12
+    },
+    {
+      "time": 1906.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "industrialMiner:iron"
+    },
+    {
+      "time": 1906.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "industrialMiner:iron",
+      "waitSeconds": 104.5
+    },
+    {
+      "time": 1951.5,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "miner:iron"
+    },
+    {
+      "time": 1951.5,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "miner:iron"
+    },
+    {
+      "time": 2014,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "industrialSmelter"
+    },
+    {
+      "time": 2014,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "industrialSmelter",
+      "waitSeconds": 107
+    },
+    {
+      "time": 2074,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "smelter:"
+    },
+    {
+      "time": 2074,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "smelter:"
+    },
+    {
+      "time": 2074,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "smelter:"
+    },
+    {
+      "time": 2109,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "mechanical"
+    },
+    {
+      "time": 2109,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "mechanical",
+      "waitSeconds": 94.5
+    },
+    {
+      "time": 2149,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "workshop:"
+    },
+    {
+      "time": 2149,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "workshop:"
+    },
+    {
+      "time": 2149,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "workshop:"
+    },
+    {
+      "time": 2151.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "industrialGenerator"
+    },
+    {
+      "time": 2151.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "industrialGenerator",
+      "waitSeconds": 42
+    },
+    {
+      "time": 2171,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "industrialMiner:iron"
+    },
+    {
+      "time": 2171,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "industrialMiner:iron",
+      "waitSeconds": 19
+    },
+    {
+      "time": 2190.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "industrialMiner:copperOre"
+    },
+    {
+      "time": 2190.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "industrialMiner:copperOre",
+      "waitSeconds": 19
+    },
+    {
+      "time": 2216,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "industrialMiner:silicate"
+    },
+    {
+      "time": 2216,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "industrialMiner:silicate",
+      "waitSeconds": 25
+    },
+    {
+      "time": 2235.5,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "miner:copperOre"
+    },
+    {
+      "time": 2261,
+      "stage": "Expand after tech 1",
+      "kind": "reclaim",
+      "detail": "miner:silicate"
+    },
+    {
+      "time": 2301,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "industrialSmelter"
+    },
+    {
+      "time": 2301,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "industrialSmelter",
+      "waitSeconds": 84.5
+    },
+    {
+      "time": 2395.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "industrialSmelter"
+    },
+    {
+      "time": 2395.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "industrialSmelter",
+      "waitSeconds": 94
+    },
+    {
+      "time": 2480,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "structural"
+    },
+    {
+      "time": 2480,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "structural",
+      "waitSeconds": 84
+    },
+    {
+      "time": 2522,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "electrical"
+    },
+    {
+      "time": 2522,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "electrical",
+      "waitSeconds": 41.5
+    },
+    {
+      "time": 2576.5,
+      "stage": "Expand after tech 1",
+      "kind": "build",
+      "detail": "mechanical"
+    },
+    {
+      "time": 2576.5,
+      "stage": "Expand after tech 1",
+      "kind": "funding",
+      "detail": "mechanical",
+      "waitSeconds": 54
+    },
+    {
+      "time": 2616.5,
+      "stage": "Component Industry I",
+      "kind": "stage",
+      "detail": "Component Industry I"
+    },
+    {
+      "time": 2966,
+      "stage": "Expand after tech 2",
+      "kind": "stage",
+      "detail": "Expand after tech 2"
+    },
+    {
+      "time": 2995.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "industrialGenerator"
+    },
+    {
+      "time": 2995.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "industrialGenerator",
+      "waitSeconds": 29.5
+    },
+    {
+      "time": 2996,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 2996,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 2996.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 2996.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 2997,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 2997,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 2997.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 2997.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 2998,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 2998,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 2998.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 2998.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 2999,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 2999,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 2999.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 2999.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3000,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3000,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3000.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3000.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3001,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3001,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3001.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3001.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3002,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3002,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3002.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3002.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3003,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3003,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3003.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3003.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3004,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3004,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3004.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3004.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3005,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3005,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3005.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3005.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3006,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3006,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3006.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3006.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3007,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3007,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3007.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3007.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 0
+    },
+    {
+      "time": 3030,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "belt"
+    },
+    {
+      "time": 3030,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "belt",
+      "waitSeconds": 22
+    },
+    {
+      "time": 3106.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "industrialGenerator"
+    },
+    {
+      "time": 3106.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "industrialGenerator",
+      "waitSeconds": 76
+    },
+    {
+      "time": 3156.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "industrialMiner:iron"
+    },
+    {
+      "time": 3156.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "industrialMiner:iron",
+      "waitSeconds": 49.5
+    },
+    {
+      "time": 3206.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "industrialMiner:iron"
+    },
+    {
+      "time": 3206.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "industrialMiner:iron",
+      "waitSeconds": 49.5
+    },
+    {
+      "time": 3258.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "industrialMiner:copperOre"
+    },
+    {
+      "time": 3258.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "industrialMiner:copperOre",
+      "waitSeconds": 51.5
+    },
+    {
+      "time": 3371.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "industrialSmelter"
+    },
+    {
+      "time": 3371.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "industrialSmelter",
+      "waitSeconds": 112.5
+    },
+    {
+      "time": 3484.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "industrialSmelter"
+    },
+    {
+      "time": 3484.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "industrialSmelter",
+      "waitSeconds": 112.5
+    },
+    {
+      "time": 3597.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "industrialSmelter"
+    },
+    {
+      "time": 3597.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "industrialSmelter",
+      "waitSeconds": 112.5
+    },
+    {
+      "time": 3652,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "structural"
+    },
+    {
+      "time": 3652,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "structural",
+      "waitSeconds": 54
+    },
+    {
+      "time": 3716,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "structural"
+    },
+    {
+      "time": 3716,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "structural",
+      "waitSeconds": 63.5
+    },
+    {
+      "time": 3759,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "structural"
+    },
+    {
+      "time": 3759,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "structural",
+      "waitSeconds": 42.5
+    },
+    {
+      "time": 3799,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "structural"
+    },
+    {
+      "time": 3799,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "structural",
+      "waitSeconds": 39.5
+    },
+    {
+      "time": 3835,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "structural"
+    },
+    {
+      "time": 3835,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "structural",
+      "waitSeconds": 35.5
+    },
+    {
+      "time": 3871,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "structural"
+    },
+    {
+      "time": 3871,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "structural",
+      "waitSeconds": 35.5
+    },
+    {
+      "time": 3917.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "electrical"
+    },
+    {
+      "time": 3917.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "electrical",
+      "waitSeconds": 46
+    },
+    {
+      "time": 3941.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "electrical"
+    },
+    {
+      "time": 3941.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "electrical",
+      "waitSeconds": 23.5
+    },
+    {
+      "time": 3968,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "electrical"
+    },
+    {
+      "time": 3968,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "electrical",
+      "waitSeconds": 26
+    },
+    {
+      "time": 3992.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "electrical"
+    },
+    {
+      "time": 3992.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "electrical",
+      "waitSeconds": 24
+    },
+    {
+      "time": 4023,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "electrical"
+    },
+    {
+      "time": 4023,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "electrical",
+      "waitSeconds": 30
+    },
+    {
+      "time": 4048,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "electrical"
+    },
+    {
+      "time": 4048,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "electrical",
+      "waitSeconds": 24.5
+    },
+    {
+      "time": 4085.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "mechanical"
+    },
+    {
+      "time": 4085.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "mechanical",
+      "waitSeconds": 37
+    },
+    {
+      "time": 4117,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "mechanical"
+    },
+    {
+      "time": 4117,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "mechanical",
+      "waitSeconds": 31
+    },
+    {
+      "time": 4131,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "mechanical"
+    },
+    {
+      "time": 4131,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "mechanical",
+      "waitSeconds": 13.5
+    },
+    {
+      "time": 4166.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "mechanical"
+    },
+    {
+      "time": 4166.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "mechanical",
+      "waitSeconds": 35
+    },
+    {
+      "time": 4198,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "mechanical"
+    },
+    {
+      "time": 4198,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "mechanical",
+      "waitSeconds": 31
+    },
+    {
+      "time": 4233,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "mechanical"
+    },
+    {
+      "time": 4233,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "mechanical",
+      "waitSeconds": 34.5
+    },
+    {
+      "time": 4356,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "fluid"
+    },
+    {
+      "time": 4356,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "fluid",
+      "waitSeconds": 122.5
+    },
+    {
+      "time": 4546.5,
+      "stage": "Expand after tech 2",
+      "kind": "build",
+      "detail": "fluid"
+    },
+    {
+      "time": 4546.5,
+      "stage": "Expand after tech 2",
+      "kind": "funding",
+      "detail": "fluid",
+      "waitSeconds": 190
+    },
+    {
+      "time": 4606.5,
+      "stage": "Industrial Construction I",
+      "kind": "stage",
+      "detail": "Industrial Construction I"
+    },
+    {
+      "time": 4980.5,
+      "stage": "Expand after tech 3",
+      "kind": "stage",
+      "detail": "Expand after tech 3"
+    },
+    {
+      "time": 4980.5,
+      "stage": "Orbital Operations I",
+      "kind": "stage",
+      "detail": "Orbital Operations I"
+    },
+    {
+      "time": 5850,
+      "stage": "Fighter Bay",
+      "kind": "stage",
+      "detail": "Fighter Bay"
+    },
+    {
+      "time": 5850,
+      "stage": "Fighter Bay",
+      "kind": "build",
+      "detail": "fighterPad"
+    },
+    {
+      "time": 5850,
+      "stage": "Fighter Bay",
+      "kind": "funding",
+      "detail": "fighterPad",
+      "waitSeconds": 0
+    },
+    {
+      "time": 5850.5,
+      "stage": "Bay: Foundation \u0026 frame",
+      "kind": "stage",
+      "detail": "Bay: Foundation \u0026 frame"
+    },
+    {
+      "time": 6442,
+      "stage": "Bay: Heavy mechanisms",
+      "kind": "stage",
+      "detail": "Bay: Heavy mechanisms"
+    },
+    {
+      "time": 7181,
+      "stage": "Bay: Power \u0026 thermal",
+      "kind": "stage",
+      "detail": "Bay: Power \u0026 thermal"
+    },
+    {
+      "time": 7349,
+      "stage": "Bay: Service systems",
+      "kind": "stage",
+      "detail": "Bay: Service systems"
+    },
+    {
+      "time": 7603.5,
+      "stage": "Bay: Commissioning",
+      "kind": "stage",
+      "detail": "Bay: Commissioning"
+    },
+    {
+      "time": 7699.5,
+      "stage": "Fighter: Skeleton setup",
+      "kind": "stage",
+      "detail": "Fighter: Skeleton setup"
+    },
+    {
+      "time": 7819.5,
+      "stage": "Fighter: Propulsion \u0026 fuel",
+      "kind": "stage",
+      "detail": "Fighter: Propulsion \u0026 fuel"
+    },
+    {
+      "time": 7939.5,
+      "stage": "Fighter: Electrical \u0026 control",
+      "kind": "stage",
+      "detail": "Fighter: Electrical \u0026 control"
+    },
+    {
+      "time": 8035.5,
+      "stage": "Fighter: Weapons \u0026 armor",
+      "kind": "stage",
+      "detail": "Fighter: Weapons \u0026 armor"
+    },
+    {
+      "time": 8155.5,
+      "stage": "Fighter: Calibration \u0026 pressure test",
+      "kind": "stage",
+      "detail": "Fighter: Calibration \u0026 pressure test"
+    }
+  ],
+  "busyMachineSeconds": {
+    "smelter": 3782,
+    "workshop": 2935,
+    "structural": 10496.5,
+    "electrical": 6329.5,
+    "industrialSmelter": 7362,
+    "mechanical": 8389,
+    "fluid": 1196.5
+  },
+  "counts": {
+    "core": 1,
+    "belt": 60,
+    "generator": 2,
+    "structural": 8,
+    "electrical": 8,
+    "industrialMiner": 8,
+    "industrialGenerator": 4,
+    "industrialSmelter": 6,
+    "mechanical": 8,
+    "fluid": 2,
+    "fighterPad": 1
+  },
+  "cargo": {
+    "Total": 16052,
+    "stacks": [
+      {
+        "item": "plate",
+        "amount": 0
+      },
+      {
+        "item": "wire",
+        "amount": 0
+      },
+      {
+        "item": "refractory",
+        "amount": 0
+      },
+      {
+        "item": "carbon",
+        "amount": 1101
+      },
+      {
+        "item": "iron",
+        "amount": 7385
+      },
+      {
+        "item": "copperOre",
+        "amount": 4544
+      },
+      {
+        "item": "silicate",
+        "amount": 3022
+      },
+      {
+        "item": "steel",
+        "amount": 0
+      },
+      {
+        "item": "copper",
+        "amount": 0
+      },
+      {
+        "item": "beam",
+        "amount": 0
+      },
+      {
+        "item": "rod",
+        "amount": 0
+      },
+      {
+        "item": "bus",
+        "amount": 0
+      },
+      {
+        "item": "bearing",
+        "amount": 0
+      },
+      {
+        "item": "electrical",
+        "amount": 0
+      },
+      {
+        "item": "motorCore",
+        "amount": 0
+      },
+      {
+        "item": "frame",
+        "amount": 0
+      },
+      {
+        "item": "motor",
+        "amount": 0
+      },
+      {
+        "item": "pump",
+        "amount": 0
+      },
+      {
+        "item": "power",
+        "amount": 0
+      },
+      {
+        "item": "control",
+        "amount": 0
+      },
+      {
+        "item": "drive",
+        "amount": 0
+      },
+      {
+        "item": "armor",
+        "amount": 0
+      },
+      {
+        "item": "cabinet",
+        "amount": 0
+      },
+      {
+        "item": "cooling",
+        "amount": 0
+      },
+      {
+        "item": "actuator",
+        "amount": 0
+      },
+      {
+        "item": "airframe",
+        "amount": 0
+      },
+      {
+        "item": "avionics",
+        "amount": 0
+      },
+      {
+        "item": "ammoHandling",
+        "amount": 0
+      },
+      {
+        "item": "thruster",
+        "amount": 0
+      },
+      {
+        "item": "bayFuel",
+        "amount": 0
+      },
+      {
+        "item": "mount",
+        "amount": 0
+      },
+      {
+        "item": "fuelSystem",
+        "amount": 0
+      }
+    ]
+  },
+  "produced": {
+    "Total": 35909,
+    "stacks": [
+      {
+        "item": "carbon",
+        "amount": 3587
+      },
+      {
+        "item": "iron",
+        "amount": 11537
+      },
+      {
+        "item": "copperOre",
+        "amount": 5699
+      },
+      {
+        "item": "silicate",
+        "amount": 3214
+      },
+      {
+        "item": "steel",
+        "amount": 4151
+      },
+      {
+        "item": "plate",
+        "amount": 2382
+      },
+      {
+        "item": "copper",
+        "amount": 1155
+      },
+      {
+        "item": "wire",
+        "amount": 1510
+      },
+      {
+        "item": "refractory",
+        "amount": 96
+      },
+      {
+        "item": "beam",
+        "amount": 770
+      },
+      {
+        "item": "rod",
+        "amount": 458
+      },
+      {
+        "item": "bus",
+        "amount": 200
+      },
+      {
+        "item": "bearing",
+        "amount": 338
+      },
+      {
+        "item": "electrical",
+        "amount": 144
+      },
+      {
+        "item": "motorCore",
+        "amount": 152
+      },
+      {
+        "item": "frame",
+        "amount": 190
+      },
+      {
+        "item": "motor",
+        "amount": 130
+      },
+      {
+        "item": "pump",
+        "amount": 44
+      },
+      {
+        "item": "power",
+        "amount": 40
+      },
+      {
+        "item": "control",
+        "amount": 52
+      },
+      {
+        "item": "drive",
+        "amount": 14
+      },
+      {
+        "item": "armor",
+        "amount": 12
+      },
+      {
+        "item": "cabinet",
+        "amount": 4
+      },
+      {
+        "item": "cooling",
+        "amount": 4
+      },
+      {
+        "item": "actuator",
+        "amount": 14
+      },
+      {
+        "item": "airframe",
+        "amount": 1
+      },
+      {
+        "item": "avionics",
+        "amount": 1
+      },
+      {
+        "item": "ammoHandling",
+        "amount": 2
+      },
+      {
+        "item": "thruster",
+        "amount": 2
+      },
+      {
+        "item": "bayFuel",
+        "amount": 2
+      },
+      {
+        "item": "mount",
+        "amount": 2
+      },
+      {
+        "item": "fuelSystem",
+        "amount": 1
+      },
+      {
+        "item": "fighter",
+        "amount": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+const assert=require('node:assert/strict');
+const {calculate}=require('./model.js'),data=require('./data.json');
+const fleet={industrialSmelter:3,structural:2,electrical:2,mechanical:2,fluid:1,industrialGenerator:2,
+ 'industrialMiner:iron':2,'industrialMiner:copperOre':1,'industrialMiner:carbon':1,'industrialMiner:silicate':1};
+let a=calculate(data,fleet,{research:false});
+assert.deepEqual(a.projectRaw,{silicate:72,iron:5361,copperOre:1641});
+let b=calculate(data,{...fleet,industrialSmelter:4},{research:false});
+assert(b.raw.iron>a.raw.iron,'Extra smelter must have a material cost');
+assert(b.power>a.power,'Extra smelter must draw power');
+let low={...fleet,industrialGenerator:0,generator:1};
+a=calculate(data,low,{research:false});b=calculate(data,{...low,generator:5},{research:false});
+assert(b.ratio>a.ratio&&b.seconds<a.seconds,'Fueled generator must restore full power');
+assert(b.raw.iron>a.raw.iron,'Power expansion must add capital materials');
+a=calculate(data,{...fleet,'industrialMiner:iron':1,industrialSmelter:8,structural:20,electrical:20,mechanical:20,fluid:10,industrialGenerator:20},{research:false});
+b=calculate(data,{...fleet,'industrialMiner:iron':2,industrialSmelter:8,structural:20,electrical:20,mechanical:20,fluid:10,industrialGenerator:20},{research:false});
+assert(b.loads.find(x=>x.id==='iron').seconds<a.loads.find(x=>x.id==='iron').seconds,'Extra mine reduces extraction workload');
+a=calculate(data,fleet,{research:true});b=calculate(data,fleet,{research:true,starter:true});
+assert(b.raw.iron<a.raw.iron&&b.raw.copperOre<a.raw.copperOre&&b.raw.silicate<a.raw.silicate,'Starting cache credited before expansion');
+assert(!Number.isFinite(calculate(data,{...fleet,fluid:0}).seconds),'Missing required family must block');
+assert(!Number.isFinite(calculate(data,{...fleet,industrialGenerator:0,'industrialMiner:carbon':0}).seconds),'An overloaded all-on factory is blocked');
+assert.equal(calculate(data,fleet,{target:'bay'}).assembly,522);
+assert.equal(calculate(data,fleet,{target:'fighter'}).assembly,414);
+console.log('PASS: exact project BOM, capital conservation, generator/fuel feedback, mining capacity, stock credits, missing capacity, Core power, phase scope');
+const logistics={research:false,logistics:true};
+a=calculate(data,{...fleet,industrialSmelter:1,'industrialMiner:iron':10},logistics);
+let ironFlow=a.flows.find(f=>f.id==='industrialSmelter').inputs.find(x=>x.item==='iron');
+assert(ironFlow.supply>ironFlow.need*5,'Ten industrial miners overfeed one smelter');
+assert(ironFlow.flow<=ironFlow.need,'Excess ore cannot exceed smelter demand');
+a=calculate(data,fleet,logistics);
+b=calculate(data,fleet,{...logistics,routes:{industrialSmelter:{lanes:2}}});
+assert.equal(b.routes.find(r=>r.id==='industrialSmelter').capacity,6);
+assert(b.raw.iron>a.raw.iron&&b.power>a.power,'Parallel lanes cost materials and power');
+let longer=calculate(data,fleet,{...logistics,routes:{industrialSmelter:{length:10}}});
+assert.equal(longer.routes.find(r=>r.id==='industrialSmelter').capacity,3,'Length cannot increase throughput');
+assert(longer.power>a.power);
+assert(!Number.isFinite(calculate(data,fleet,{...logistics,routes:{industrialSmelter:{lanes:0}}}).seconds),'No input trunk blocks manufacturing');
+let upgraded=calculate(data,fleet,{...logistics,routes:{industrialSmelter:{tier:3}}});
+assert.equal(upgraded.routes.find(r=>r.id==='industrialSmelter').capacity,5);
+assert(upgraded.capital.bus>a.capital.bus||(!a.capital.bus&&upgraded.capital.bus>0),'Tier 3 upgrade includes bus cost');
+for(const flow of a.flows.filter(x=>x.id!=='generation')){
+ assert(Math.abs(flow.inputs.reduce((sum,x)=>sum+x.belt,0)-flow.capacity)<1e-6,'Ingredients share trunk capacity');
+ for(const input of flow.inputs)assert(input.flow<=input.supply+1e-6&&input.flow<=input.belt+1e-6&&input.flow<=input.need+1e-6,'Every ingredient respects all constraints');
+}
+let noCoal=calculate(data,fleet,{...logistics,routes:{generation:{lanes:0}}});
+assert.equal(noCoal.duty,0,'Fuel delivery is required for generators');
+assert.equal(noCoal.supply,80,'Core survives loss of coal delivery');
+console.log('PASS: oversupply, shared input amounts, parallel belts, length, upgrades, blocked trunks, fuel delivery');

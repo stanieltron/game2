@@ -1,0 +1,2130 @@
+{
+  "bounds": {
+    "capital": [
+      0.25,
+      12
+    ],
+    "cycles": [
+      0.25,
+      2.5
+    ],
+    "feedSpeed": [
+      0.5,
+      2
+    ],
+    "generatorCapital": [
+      0.5,
+      2.5
+    ],
+    "power": [
+      0.5,
+      2
+    ],
+    "refund": [
+      0,
+      1
+    ],
+    "researchCapital": [
+      0.5,
+      2
+    ],
+    "starterPower": [
+      1,
+      1.8
+    ]
+  },
+  "budget": 24,
+  "catalogHash": "69dbb75259ff34b8a884af8432e0d7bcf81d88023ba0607c0502826f26417ffa",
+  "definitions": {
+    "minimum": {
+      "full": false,
+      "gate": null,
+      "policy": {
+        "laneTargets": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "lanes": 2,
+        "maxSeconds": 43200,
+        "name": "minimum",
+        "recipeRule": 0,
+        "reclaim": true,
+        "scale": 2,
+        "stages": [
+          [
+            {
+              "count": 1,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "miner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "smelter"
+            },
+            {
+              "count": 1,
+              "spec": "workshop"
+            },
+            {
+              "count": 1,
+              "spec": "generator"
+            },
+            {
+              "count": 1,
+              "spec": "miner:silicate"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "structural"
+            },
+            {
+              "count": 1,
+              "spec": "electrical"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 1,
+              "spec": "mechanical"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 1,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 1,
+              "spec": "structural"
+            },
+            {
+              "count": 1,
+              "spec": "electrical"
+            },
+            {
+              "count": 1,
+              "spec": "mechanical"
+            },
+            {
+              "count": 1,
+              "spec": "fluid"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 1,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 1,
+              "spec": "structural"
+            },
+            {
+              "count": 1,
+              "spec": "electrical"
+            },
+            {
+              "count": 1,
+              "spec": "mechanical"
+            },
+            {
+              "count": 1,
+              "spec": "fluid"
+            }
+          ]
+        ],
+        "tilesPerLane": 5,
+        "trace": true,
+        "transport": true,
+        "upgrade": true
+      }
+    },
+    "over_12": {
+      "full": false,
+      "gate": "over_12",
+      "policy": {
+        "laneTargets": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "lanes": 2,
+        "maxSeconds": 43200,
+        "name": "over_12",
+        "recipeRule": 0,
+        "reclaim": true,
+        "scale": 2,
+        "stages": [
+          [
+            {
+              "count": 1,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "miner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "smelter"
+            },
+            {
+              "count": 1,
+              "spec": "workshop"
+            },
+            {
+              "count": 1,
+              "spec": "generator"
+            },
+            {
+              "count": 1,
+              "spec": "miner:silicate"
+            },
+            {
+              "count": 2,
+              "spec": "smelter"
+            },
+            {
+              "count": 2,
+              "spec": "workshop"
+            },
+            {
+              "count": 2,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "generator"
+            },
+            {
+              "count": 3,
+              "spec": "smelter"
+            },
+            {
+              "count": 3,
+              "spec": "workshop"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 1,
+              "spec": "structural"
+            },
+            {
+              "count": 1,
+              "spec": "electrical"
+            },
+            {
+              "count": 1,
+              "spec": "mechanical"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 3,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 2,
+              "spec": "structural"
+            },
+            {
+              "count": 2,
+              "spec": "electrical"
+            },
+            {
+              "count": 2,
+              "spec": "mechanical"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 4,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 12,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 12,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 4,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 12,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 12,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ]
+        ],
+        "tilesPerLane": 5,
+        "trace": true,
+        "transport": true,
+        "upgrade": true
+      }
+    },
+    "over_2": {
+      "full": false,
+      "gate": "over_2",
+      "policy": {
+        "laneTargets": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "lanes": 2,
+        "maxSeconds": 43200,
+        "name": "over_2",
+        "recipeRule": 0,
+        "reclaim": true,
+        "scale": 2,
+        "stages": [
+          [
+            {
+              "count": 1,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "miner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "smelter"
+            },
+            {
+              "count": 1,
+              "spec": "workshop"
+            },
+            {
+              "count": 1,
+              "spec": "generator"
+            },
+            {
+              "count": 1,
+              "spec": "miner:silicate"
+            },
+            {
+              "count": 2,
+              "spec": "smelter"
+            },
+            {
+              "count": 2,
+              "spec": "workshop"
+            },
+            {
+              "count": 2,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "generator"
+            },
+            {
+              "count": 3,
+              "spec": "smelter"
+            },
+            {
+              "count": 3,
+              "spec": "workshop"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 1,
+              "spec": "structural"
+            },
+            {
+              "count": 1,
+              "spec": "electrical"
+            },
+            {
+              "count": 1,
+              "spec": "mechanical"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 3,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 2,
+              "spec": "structural"
+            },
+            {
+              "count": 2,
+              "spec": "electrical"
+            },
+            {
+              "count": 2,
+              "spec": "mechanical"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 3,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 7,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 7,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 3,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 7,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 7,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ]
+        ],
+        "tilesPerLane": 5,
+        "trace": true,
+        "transport": true,
+        "upgrade": true
+      }
+    },
+    "over_4": {
+      "full": false,
+      "gate": "over_4",
+      "policy": {
+        "laneTargets": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "lanes": 2,
+        "maxSeconds": 43200,
+        "name": "over_4",
+        "recipeRule": 0,
+        "reclaim": true,
+        "scale": 2,
+        "stages": [
+          [
+            {
+              "count": 1,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "miner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "smelter"
+            },
+            {
+              "count": 1,
+              "spec": "workshop"
+            },
+            {
+              "count": 1,
+              "spec": "generator"
+            },
+            {
+              "count": 1,
+              "spec": "miner:silicate"
+            },
+            {
+              "count": 2,
+              "spec": "smelter"
+            },
+            {
+              "count": 2,
+              "spec": "workshop"
+            },
+            {
+              "count": 2,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "generator"
+            },
+            {
+              "count": 3,
+              "spec": "smelter"
+            },
+            {
+              "count": 3,
+              "spec": "workshop"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 1,
+              "spec": "structural"
+            },
+            {
+              "count": 1,
+              "spec": "electrical"
+            },
+            {
+              "count": 1,
+              "spec": "mechanical"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 3,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 2,
+              "spec": "structural"
+            },
+            {
+              "count": 2,
+              "spec": "electrical"
+            },
+            {
+              "count": 2,
+              "spec": "mechanical"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 4,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 8,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 8,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 4,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 8,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 8,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ]
+        ],
+        "tilesPerLane": 5,
+        "trace": true,
+        "transport": true,
+        "upgrade": true
+      }
+    },
+    "over_6": {
+      "full": false,
+      "gate": "over_6",
+      "policy": {
+        "laneTargets": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "lanes": 2,
+        "maxSeconds": 43200,
+        "name": "over_6",
+        "recipeRule": 0,
+        "reclaim": true,
+        "scale": 2,
+        "stages": [
+          [
+            {
+              "count": 1,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "miner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "smelter"
+            },
+            {
+              "count": 1,
+              "spec": "workshop"
+            },
+            {
+              "count": 1,
+              "spec": "generator"
+            },
+            {
+              "count": 1,
+              "spec": "miner:silicate"
+            },
+            {
+              "count": 2,
+              "spec": "smelter"
+            },
+            {
+              "count": 2,
+              "spec": "workshop"
+            },
+            {
+              "count": 2,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "generator"
+            },
+            {
+              "count": 3,
+              "spec": "smelter"
+            },
+            {
+              "count": 3,
+              "spec": "workshop"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 1,
+              "spec": "structural"
+            },
+            {
+              "count": 1,
+              "spec": "electrical"
+            },
+            {
+              "count": 1,
+              "spec": "mechanical"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 3,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 2,
+              "spec": "structural"
+            },
+            {
+              "count": 2,
+              "spec": "electrical"
+            },
+            {
+              "count": 2,
+              "spec": "mechanical"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 4,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 9,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 9,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 4,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 9,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 9,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ]
+        ],
+        "tilesPerLane": 5,
+        "trace": true,
+        "transport": true,
+        "upgrade": true
+      }
+    },
+    "over_6_reclaim": {
+      "full": false,
+      "gate": "over_6",
+      "policy": {
+        "laneTargets": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "lanes": 2,
+        "maxSeconds": 43200,
+        "name": "over_6_reclaim",
+        "recipeRule": 0,
+        "reclaim": true,
+        "reclaimAtBay": {
+          "mechanical": 6,
+          "structural": 6
+        },
+        "scale": 2,
+        "stages": [
+          [
+            {
+              "count": 1,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "miner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "smelter"
+            },
+            {
+              "count": 1,
+              "spec": "workshop"
+            },
+            {
+              "count": 1,
+              "spec": "generator"
+            },
+            {
+              "count": 1,
+              "spec": "miner:silicate"
+            },
+            {
+              "count": 2,
+              "spec": "smelter"
+            },
+            {
+              "count": 2,
+              "spec": "workshop"
+            },
+            {
+              "count": 2,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "generator"
+            },
+            {
+              "count": 3,
+              "spec": "smelter"
+            },
+            {
+              "count": 3,
+              "spec": "workshop"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 1,
+              "spec": "structural"
+            },
+            {
+              "count": 1,
+              "spec": "electrical"
+            },
+            {
+              "count": 1,
+              "spec": "mechanical"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 3,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 2,
+              "spec": "structural"
+            },
+            {
+              "count": 2,
+              "spec": "electrical"
+            },
+            {
+              "count": 2,
+              "spec": "mechanical"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 4,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 9,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 9,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 4,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 9,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 9,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ]
+        ],
+        "tilesPerLane": 5,
+        "trace": true,
+        "transport": true,
+        "upgrade": true
+      }
+    },
+    "reference": {
+      "full": false,
+      "gate": null,
+      "policy": {
+        "laneTargets": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "lanes": 2,
+        "maxSeconds": 43200,
+        "name": "reference",
+        "recipeRule": 0,
+        "reclaim": true,
+        "scale": 2,
+        "stages": [
+          [
+            {
+              "count": 1,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "miner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "smelter"
+            },
+            {
+              "count": 1,
+              "spec": "workshop"
+            },
+            {
+              "count": 1,
+              "spec": "generator"
+            },
+            {
+              "count": 1,
+              "spec": "miner:silicate"
+            },
+            {
+              "count": 2,
+              "spec": "smelter"
+            },
+            {
+              "count": 2,
+              "spec": "workshop"
+            },
+            {
+              "count": 2,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "generator"
+            },
+            {
+              "count": 3,
+              "spec": "smelter"
+            },
+            {
+              "count": 3,
+              "spec": "workshop"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 1,
+              "spec": "structural"
+            },
+            {
+              "count": 1,
+              "spec": "electrical"
+            },
+            {
+              "count": 1,
+              "spec": "mechanical"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 3,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 2,
+              "spec": "structural"
+            },
+            {
+              "count": 2,
+              "spec": "electrical"
+            },
+            {
+              "count": 2,
+              "spec": "mechanical"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 3,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 6,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 6,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 3,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 6,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 6,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ]
+        ],
+        "tilesPerLane": 5,
+        "trace": true,
+        "transport": true,
+        "upgrade": true
+      }
+    },
+    "under_2": {
+      "full": false,
+      "gate": "under_2",
+      "policy": {
+        "laneTargets": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "lanes": 2,
+        "maxSeconds": 43200,
+        "name": "under_2",
+        "recipeRule": 0,
+        "reclaim": true,
+        "scale": 2,
+        "stages": [
+          [
+            {
+              "count": 1,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "miner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "smelter"
+            },
+            {
+              "count": 1,
+              "spec": "workshop"
+            },
+            {
+              "count": 1,
+              "spec": "generator"
+            },
+            {
+              "count": 1,
+              "spec": "miner:silicate"
+            },
+            {
+              "count": 2,
+              "spec": "smelter"
+            },
+            {
+              "count": 2,
+              "spec": "workshop"
+            },
+            {
+              "count": 2,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "generator"
+            },
+            {
+              "count": 3,
+              "spec": "smelter"
+            },
+            {
+              "count": 3,
+              "spec": "workshop"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 1,
+              "spec": "structural"
+            },
+            {
+              "count": 1,
+              "spec": "electrical"
+            },
+            {
+              "count": 1,
+              "spec": "mechanical"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 3,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 2,
+              "spec": "structural"
+            },
+            {
+              "count": 2,
+              "spec": "electrical"
+            },
+            {
+              "count": 2,
+              "spec": "mechanical"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 3,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 5,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 5,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 3,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 5,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 5,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ]
+        ],
+        "tilesPerLane": 5,
+        "trace": true,
+        "transport": true,
+        "upgrade": true
+      }
+    },
+    "under_4": {
+      "full": false,
+      "gate": "under_4",
+      "policy": {
+        "laneTargets": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "lanes": 2,
+        "maxSeconds": 43200,
+        "name": "under_4",
+        "recipeRule": 0,
+        "reclaim": true,
+        "scale": 2,
+        "stages": [
+          [
+            {
+              "count": 1,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "miner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "smelter"
+            },
+            {
+              "count": 1,
+              "spec": "workshop"
+            },
+            {
+              "count": 1,
+              "spec": "generator"
+            },
+            {
+              "count": 1,
+              "spec": "miner:silicate"
+            },
+            {
+              "count": 2,
+              "spec": "smelter"
+            },
+            {
+              "count": 2,
+              "spec": "workshop"
+            },
+            {
+              "count": 2,
+              "spec": "miner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "miner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "generator"
+            },
+            {
+              "count": 3,
+              "spec": "smelter"
+            },
+            {
+              "count": 3,
+              "spec": "workshop"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 1,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 1,
+              "spec": "structural"
+            },
+            {
+              "count": 1,
+              "spec": "electrical"
+            },
+            {
+              "count": 1,
+              "spec": "mechanical"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 2,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 3,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 2,
+              "spec": "structural"
+            },
+            {
+              "count": 2,
+              "spec": "electrical"
+            },
+            {
+              "count": 2,
+              "spec": "mechanical"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 3,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 4,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 4,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ],
+          [
+            {
+              "count": 1,
+              "spec": "industrialMiner:carbon"
+            },
+            {
+              "count": 3,
+              "spec": "industrialGenerator"
+            },
+            {
+              "count": 3,
+              "spec": "industrialMiner:iron"
+            },
+            {
+              "count": 2,
+              "spec": "industrialMiner:copperOre"
+            },
+            {
+              "count": 1,
+              "spec": "industrialMiner:silicate"
+            },
+            {
+              "count": 6,
+              "spec": "industrialSmelter"
+            },
+            {
+              "count": 4,
+              "spec": "structural"
+            },
+            {
+              "count": 4,
+              "spec": "electrical"
+            },
+            {
+              "count": 4,
+              "spec": "mechanical"
+            },
+            {
+              "count": 2,
+              "spec": "fluid"
+            }
+          ]
+        ],
+        "tilesPerLane": 5,
+        "trace": true,
+        "transport": true,
+        "upgrade": true
+      }
+    }
+  },
+  "sourceHashes": {
+    "Assets\\Scripts\\FactoryBeltPlacement.cs": "dc5b574dbbfb2cb2a599a50154800e1ff8651f704e3396b57e50f80bfb3fefbd",
+    "Assets\\Scripts\\FactoryBridges.cs": "0f18362414304863f57e8e71585c54e65ff2c0a2bcbda613b50c4a20c830c498",
+    "Assets\\Scripts\\FactoryGame.cs": "cb594cd5cfbef395302101e4ea62defa09ff6fbf1969ba9d8db86cbc395425f0",
+    "Assets\\Scripts\\FactoryInteraction.cs": "935bedb65f871a61293fced65bf0f31dd871eaa723f2f0cfee118cb6331bfbc9",
+    "Assets\\Scripts\\FactoryLogistics.cs": "c66b53327dbbe226fab31a64e11dd8798f014f248e87d301177d392c8cc7186a",
+    "Assets\\Scripts\\FactoryMegaproject.cs": "ed92bfdbcf3c758f29e828b90454022935c8fef204a7cac6bd85c72ff21e0ca8",
+    "Assets\\Scripts\\FactoryPowerPriority.cs": "d3dd05b31d2a908e9b342e94c5626350bfa6cbcd62cf6d714dc2f0f44ff9c528",
+    "Assets\\Scripts\\FactoryProjectUI.cs": "3965b347775f82f9b1447b22e35aa265ad490e32356aee4faed8bc6baf2c6675",
+    "Assets\\Scripts\\FactoryRecovery.cs": "8897dfda6bc24f14e5aafe48c5c8985f37cd5ddbb3aedb6aee38ddf05e595da6",
+    "Assets\\Scripts\\FactoryRecoveryUI.cs": "d2bc0136d206afd92d646e652d63c64bedcf4328fc5804712df7f1fbc04a97ea",
+    "Assets\\Scripts\\FactorySimulation.cs": "bf4efce393e7fcf5a8cdb480756d87a4eec2405db0345f2c19aa546271c51362",
+    "Tools\\Balance\\BalanceCases.cs": "9b70bd3d6b088460a8d174980d74af40bbae2ec1260601a7b72139bfd715af4b",
+    "Tools\\Balance\\BatchSearch.cs": "0fb21f3898c2a76088eab38262b8d34adf8d17a48f507ff948a998d88109c47e",
+    "Tools\\Balance\\FactoryPlanner.cs": "19184112932d6c5f4fa813dec423df845b0b454ecd4f2e2ed394183657510782",
+    "Tools\\Balance\\Runner.cs": "959ef32b1ae71dfc27ce800249dfc394e895a1df91abd6fb27f102135dbe171c",
+    "Tools\\Balance\\SearchPolicy.cs": "45b7eca348b9abd6bef4a8f15cf432908762a5b5b351ad9dfcbc0fc534803ecf",
+    "Tools\\Balance\\balance.py": "f119e8ad946d1129725d19be91fc03c49eaa2ef71d8fd0564c738c575962bcfa",
+    "Tools\\Balance\\calibrate.py": "2897337d600f033ead51b6ff53ad9b48ab7ef492c57c461be7cba9273f19bc5e",
+    "Tools\\Balance\\directional_search.py": "66b264d4f907c4add59e620642842085a18be3b4de69087746dd8c043a018ca6",
+    "Tools\\Balance\\load.ps1": "6a3c8c33eae35d4f061791140b8c01af2b3e6799dfa9de7c918eb668e527e29d",
+    "Tools\\Balance\\run_cases.ps1": "65319f40db0e41506a905b792e36ded2d144cefa3ddcb8400765ed02e49329a5"
+  },
+  "step": 0.5,
+  "steps": {
+    "capital": 0.5,
+    "cycles": 0.5,
+    "feedSpeed": 0.5,
+    "generatorCapital": 0.75,
+    "power": 0.5,
+    "refund": 0.5,
+    "researchCapital": 0.5,
+    "starterPower": 0.4
+  },
+  "targets": {
+    "fastMinutes": [
+      90,
+      120
+    ],
+    "maxCounterexampleAdvantageSeconds": 30,
+    "maxStepDifferenceSeconds": 120,
+    "minimumRatio": [
+      2.8,
+      3.2
+    ],
+    "penalties": {
+      "over_12": 0.5,
+      "over_2": 0.1,
+      "over_4": 0.2,
+      "over_6": 0.3,
+      "under_2": 0.15,
+      "under_4": 0.3
+    }
+  }
+}
